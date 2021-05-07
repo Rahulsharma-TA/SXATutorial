@@ -1,0 +1,11 @@
+@import "abstracts/mixins";
+.divider {
+    width:100%;
+    hr {
+        margin: $default-padding 0;
+        border: 0;
+        height: 0;
+        @include basic-border(top,$divider-border);
+    }
+}
+@import "styles/divider/*"

@@ -1,0 +1,18 @@
+@import "abstracts/mixins";
+@import "abstracts/vars";
+.link {
+    background: $link-bg;
+    @import "base/reset/links";
+    @include basic-padding();
+    font-size: $font-size-x-small;
+    >.component-content {
+        @include basic-styles($link-bg, $link-text-color);
+        @include basic-border(all, $link-border);
+        a {
+            color: inherit;
+            &:hover {
+                color: $link-text-color-active;
+            }
+        }
+    }
+}

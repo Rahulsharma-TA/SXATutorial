@@ -1,0 +1,109 @@
+@import "abstracts/mixins";
+@import "abstracts/vars";
+@import "base/fontawesome/font-awesome-mix-var";
+.on-page-editor {
+    .accordion .toggle-content [scfieldtype="rich text"] {
+        display: block;
+    }
+}
+
+.accordion {
+    @include basic-styles($accordion-bg, $accordion-color);
+    @include basic-border(all, $accordion-border);
+    font-size: $font-size-x-small;
+    .component-content {
+        div {
+            ul.items {
+                overflow: hidden;
+                li.item {
+                    @include basic-border(bottom, $accordion-item-border);
+                    @include basic-padding(15px 0);
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                    &.active {
+                        >.scEnabledChrome {
+                            >.toggle-header {
+                                .field-heading:after {
+                                    content: $fa-var-angle-up !important;
+                                }
+                            }
+                        }
+                        >.toggle-header {
+                            .field-heading:after {
+                                content: $fa-var-angle-up !important;
+                            }
+                        }
+                        
+                        
+                        div.toggle-content {
+                            div.component.content {
+                                div.field-content {}
+                            }
+                        }
+                    }
+                    div.toggle-header {
+                        background-color: $accordion-header-bg;
+                        cursor: pointer;
+                        font-size: inherit;
+                        &:hover {
+                            background-color: $accordion-header-bg-active;
+                        }
+                        div.label {
+                            @include clearfix;
+                            padding: 0;
+                            text-align: left;
+                            display: block;
+                            background: transparent;
+                            position: relative;
+                            z-index: 3;
+                            >.row {
+                                margin-left: 0;
+                                margin-right: 0;
+                            }
+                            div.component.content {
+                                margin-top: 0;
+                                border-width: 0;
+                                padding: 15px 0;
+                                div.field-heading {
+                                    font-size: inherit;
+                                    font-weight: 600;
+                                    &:after {
+                                        @include fa-icon();
+                                        font-size: 16px;
+                                        position: absolute;
+                                        display: block;
+                                        content: $fa-var-angle-down;
+                                        top: 50%;
+                                        right: 10px;
+                                        transform: translateY(-50%);
+                                        width: 16px;
+                                        height: 16px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    div.toggle-content {
+                        background-color: $accordion-toggled-bg;
+                        font-size: inherit;
+                        padding-top: 0;
+                        >.row {
+                            margin-left: 0;
+                            margin-right: 0;
+                        }
+                        @include clearfix();
+                        div.component.content {
+                            border-width: 0;
+                            margin-top: 0;
+                            padding: 15px 0;
+                            div.field-content {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import 'styles/accordion/*';

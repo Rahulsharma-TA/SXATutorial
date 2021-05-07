@@ -1,0 +1,288 @@
+/* breakpoints */
+.login {
+  /* breakpoints */
+  padding: 15px 15px 15px 15px;
+  min-width: 360px;
+}
+
+.login label {
+  background: transparent;
+  color: #5e5e5e;
+}
+
+.login button, .login input[type="button"] {
+  padding: 12px 50px;
+}
+
+.login input {
+  padding: 12px 10px;
+}
+
+.login input, .login button {
+  border-radius: 5px;
+  display: inline-block;
+  box-sizing: border-box;
+  background: #f7f7f7;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d6d6d6;
+  line-height: 14px;
+  color: #5e5e5e;
+  font-weight: normal;
+  clear: both;
+  height: auto;
+  font-size: 12px;
+}
+
+.login input:focus, .login button:focus {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d6d6d6;
+}
+
+.login input::-moz-focus-inner, .login button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.login input[type="text"] {
+  font-size: 12px;
+}
+
+.login textarea, .login select {
+  box-shadow: none;
+  color: #5e5e5e;
+  width: 100%;
+}
+
+.login select {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cccccc;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  box-sizing: border-box;
+  outline: none;
+  cursor: pointer;
+}
+
+.login input[type="checkbox"] {
+  position: absolute;
+  left: -99999px;
+}
+
+.login input[type="checkbox"]:checked {
+  padding: 10px;
+}
+
+.login input[type="checkbox"]:checked ~ label:before {
+  background-color: #fff;
+}
+
+.login input[type="checkbox"]:checked ~ label:after {
+  background: url("../images/checked.png") 0 0 no-repeat;
+  background-position: -2px -2px;
+}
+
+.login input[type="checkbox"] ~ label {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.login input[type="checkbox"] ~ label:after, .login input[type="checkbox"] ~ label:before {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d6d6d6;
+  display: inline-block;
+  background-color: #fff;
+  content: " ";
+  position: absolute;
+  z-index: 1;
+  width: 15px;
+  height: 15px;
+  left: -20px;
+  top: 0;
+  margin-right: 3px;
+}
+
+.login input[type="file"] {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d6d6d6;
+  width: 95%;
+  font-weight: bold;
+  padding: 2px;
+}
+
+.login input[type="file"] + span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.login input[type="file"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.login input[type="radio"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.login input[type="radio"] + label:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  left: 0;
+}
+
+.login input[type="radio"] + label:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  display: block;
+  width: 16px;
+  height: 15px;
+  background: url("../images/radiobox.png");
+  left: 0;
+}
+
+.login input[type="radio"]:checked + label:after {
+  background-position: -16px 0;
+}
+
+.login input[type="radio"] + label {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-left: 18px;
+  margin-left: 5px;
+  position: relative;
+}
+
+.login .sitecore-form input[type="checkbox"] {
+  position: static;
+  left: 0;
+}
+
+.login .sitecore-form input[type="radio"] {
+  position: static;
+  left: 0;
+}
+
+.login > .component-content {
+  background-color: #f7f7f7;
+  color: #5e5e5e;
+  border-radius: 5px;
+  padding: 15px 15px 15px 15px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d6d6d6;
+}
+
+.login > .component-content > p,
+.login > .component-content > .scWebEditInput > p {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.login > .component-content form {
+  margin-top: 5px;
+}
+
+.login > .component-content form table {
+  width: 100%;
+}
+
+.login > .component-content form table tbody {
+  background-color: #f7f7f7 !important;
+}
+
+.login > .component-content form table tbody tr {
+  background-color: #f7f7f7 !important;
+}
+
+.login > .component-content form table tbody tr td:first-child {
+  width: 85px;
+}
+
+.login > .component-content form table tbody tr td.sxa-validation, .login > .component-content form table tbody tr td.sxa-login-failed {
+  text-align: left;
+  color: #ca231d;
+  font-size: 12px;
+}
+
+.login > .component-content form table tbody tr td.sxa-remember-me {
+  text-align: right;
+}
+
+.login > .component-content form table tbody tr td.sxa-remember-me label {
+  padding-right: 25px;
+}
+
+.login > .component-content form table tbody tr td [type="submit"] {
+  float: right;
+  color: #ffffff;
+  background-color: #5e5e5e;
+  box-shadow: none;
+  background-image: none;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.login > .component-content form table tbody tr td [type="submit"]:hover {
+  background-color: #5e5e5e !important;
+}
+
+.login > .component-content form table tbody tr td input,
+.login > .component-content form table tbody tr td label {
+  display: inline-block;
+  margin: 0;
+  font-size: 12px;
+  margin: 5px 0;
+  padding-right: 5px;
+}
+
+.login > .component-content form table tbody tr td input[type="text"],
+.login > .component-content form table tbody tr td input[type="password"] {
+  min-height: 33px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.login > .component-content form table tbody tr td input[type="checkbox"]:checked ~ label:before,
+.login > .component-content form table tbody tr td input[type="checkbox"]:checked ~ label:after {
+  background-position: center center;
+}
+
+.login > .component-content form table tbody tr td input[type="checkbox"] ~ label {
+  font-size: 12px;
+  margin-left: 0;
+  margin-right: 15px;
+}
+
+.login > .component-content form table tbody tr td input[type="checkbox"] ~ label:after, .login > .component-content form table tbody tr td input[type="checkbox"] ~ label:before {
+  right: -15px;
+  left: auto;
+  height: 22px;
+  width: 22px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 4px;
+}

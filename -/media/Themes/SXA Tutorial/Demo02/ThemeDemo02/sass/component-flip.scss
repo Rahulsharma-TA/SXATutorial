@@ -1,0 +1,137 @@
+@import "abstracts/mixins";
+@import "abstracts/vars";
+.on-page-editor {
+    .flipsides {
+        height: auto;
+        .Side0,
+        .Side1 {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.flip {
+    background: $flip-bg;
+    perspective: 1000;
+    padding-left: 0;
+    padding-right: 0;
+    &.active {
+        >.component-content {
+            .flipsides {
+                .Side0 {
+                    transform: rotateY(180deg);
+                    animation: slide0hide 1s ease-in 1s forwards;
+                }
+                .Side1 {
+                    transform: rotateY(360deg);
+                    animation: slide1show 0s ease-in 1s forwards;
+                }
+            }
+        }
+    }
+    >.component-content {
+        .flipsides {
+            position: relative;
+            word-wrap: break-word;
+            .Side1,
+            .Side0,
+            .Side0_EDIT,
+            .Side1_EDIT {
+                @include basic-padding();
+                width: 100%;
+                border-radius: 5px;
+                box-sizing: border-box;
+                @include clearfix();
+                .slide-heading {
+                    font-weight: 600;
+                }
+                .slide-content {
+                    margin-top: 20px;
+                }
+                .slide-heading,
+                .slide-content {
+                    @include clearfix();
+                    color: $flip-color;
+                }
+            }
+            .Side1,
+            .Side0 {
+                @include basic-border();
+                box-sizing: border-box;
+                backface-visibility: hidden;
+                transition-property: transform;
+                transition-duration: 1s;
+                transition-timing-function: ease-in;
+                transform-style: preserve-3d;
+                position: absolute;
+                top: 0;
+                left: 0;
+                overflow: hidden;
+                cursor: pointer;
+                width: 100%;
+                .slide-heading,
+                .slide-content {
+                    @include clearfix();
+                }
+            }
+            .Side0,
+            .Side0_EDIT {
+                background: $flip-slides-bg;
+            }
+            .Side1,
+            .Side1_EDIT {
+                background: $flip-slides-second-bg;
+            }
+            .Side1_EDIT {
+                margin-top: 5px;
+            }
+            .Side0 {
+                .slide-heading {
+                    .component.content {
+                        .component-content {
+                            .field-heading {}
+                        }
+                    }
+                }
+                .slide-content {
+                    .component.content {
+                        .component-content {
+                            .field-content {}
+                        }
+                    }
+                }
+            }
+            .Side1 {
+                transform: rotateY(180deg);
+                animation: slide0hide 1s ease-in 1s forwards;
+                .slide-heading {
+                    .component.content {
+                        .component-content {
+                            .field-heading {}
+                        }
+                    }
+                }
+                .slide-content {
+                    .component.content {
+                        .component-content {
+                            .field-content {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import "styles/flip/*";
+@keyframes slide0hide {
+    to {
+        visibility: hidden;
+    }
+}
+
+@keyframes slide1show {
+    to {
+        visibility: visible;
+    }
+}

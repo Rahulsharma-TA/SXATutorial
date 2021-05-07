@@ -1,0 +1,31 @@
+/* breakpoints */
+.title {
+  padding: 15px 15px 15px 15px;
+}
+
+.title > .component-content {
+  background-color: transparent;
+  color: #5e5e5e;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.title > .component-content h1 a,
+.title > .component-content .field-title a {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #d6d6d6;
+  font-size: 24px;
+  color: #5e5e5e;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+
+.title > .component-content h1 a:hover,
+.title > .component-content .field-title a:hover {
+  color: #5e5e5e;
+}

@@ -1,0 +1,101 @@
+@import "../../base/fontawesome/font-awesome-mix-var";
+.facet-single-selection-list {
+    @include basic-padding();
+    @include basic-styles($search-checklist-bg !important, $search-checklist-color, 0);
+    width: 100%;
+    box-sizing: border-box;
+    .facet-hided {
+        .hide-facet-value {
+          display: none;
+        }
+      }
+      .toogle-facet-visibility {
+        font-size: 12px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        color: $search-item-color;
+        cursor: pointer;
+      }
+    .facet-dropdown {
+        margin: 10px 0;
+        select {
+            min-width: 100%;
+        }
+    }
+
+    .facet-value {
+        input[type="checkbox"] {
+            display: none;
+        }
+        color: $search-checklist-item-color;
+        font-size: $font-size-x-small;
+        padding-bottom: $default-padding;
+        padding-top: $default-padding;
+        position: relative;
+        cursor: pointer;
+        .facetName {
+            padding-left: 20px;
+        }
+        input[type="checkbox"] {
+            &:checked {
+                ~label:after {
+                    background-position: center center;
+                }
+            }
+            &~label {
+                color: $search-checklist-item-color;
+                font-size: $font-size-x-small;
+                padding-left: 5px;
+                &:after,
+                &:before {
+                    top: 50%;
+                    transform: translateY(-50%);
+                    border-radius: 3px;
+                }
+            }
+        }
+        &.active-facet {
+            label,
+            .facet-count.highlighted,
+            span,
+            .facet-count {
+                color: $search-item-color-active !important;
+            }
+        }
+    }
+    .bottom-filter-button {
+        margin-top: $default-padding;
+        button,
+        input[type="button"] {
+            color: $search-checklist-btn-color;
+            font-size: $font-size-x-small;
+            background-color: $search-checklist-btn-bg;
+            &:hover {
+                background-color: $search-checklist-btn-bg !important;
+                cursor: pointer;
+            }
+        }
+    }
+    .bottom-remove-filter {
+        margin-top: $default-padding;
+        button,
+        input[type="button"] {
+            color: $search-checklist-btn-color;
+            font-size: $font-size-x-small;
+            background-color: $search-checklist-clearbtn-bg;
+            border-color: $search-checklist-clearbtn-border;
+            color: $search-checklist-clearbtn-color;
+            &:hover {
+                background-color: $search-checklist-clearbtn-bg !important;
+                cursor: pointer;
+            }
+        }
+    }
+    .bottom-remove-filter,
+    .bottom-filter-button {
+        width: 100%;
+        [type="button"] {
+            width: 100%;
+        }
+    }
+}

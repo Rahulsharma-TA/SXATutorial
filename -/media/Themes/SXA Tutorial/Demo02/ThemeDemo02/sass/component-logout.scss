@@ -1,0 +1,20 @@
+@import "abstracts/mixins";
+@import "abstracts/vars";
+.logout {
+    @import "base/reset/links";
+    @include basic-padding();
+    .component-content {
+        font-size: $font-size-x-small;
+        color: $logout-link-text-color;
+        >a,
+        >p {
+            @include basic-padding();
+            @include basic-styles($logout-link-bg, $logout-link-text-color);
+            @include basic-font();
+            display: block;
+            font-size: inherit;
+            color: inherit;
+            text-align: center;
+        }
+    }
+}

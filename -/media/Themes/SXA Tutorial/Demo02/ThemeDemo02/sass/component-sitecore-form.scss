@@ -1,0 +1,38 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+.sitecore-form {
+    @include basic-padding();
+    >.component-content {
+        @include basic-padding();
+        @include basic-border(all, transparent);
+        @include basic-styles($form-bg, $form-color);
+    }
+    form {
+        @include basic-font();
+        font-size: $font-size-x-small;
+        color: $form-color;
+        >div {
+            @include basic-padding($default-padding 0);
+            label {
+                font-family: inherit;
+                padding-right: $default-padding;
+            }
+            input {
+                font-family: inherit;
+            }
+            label+input {}
+            label+textarea,
+                {
+                margin-top: $default-padding;
+            }
+            textarea,
+            select {
+                margin-top: $default-padding;
+            }
+        }
+        [data-sc-field-name="Password Confirmation"] {
+            margin-right: $default-padding;
+        }
+    }
+    @import "styles/forms/*";
+}

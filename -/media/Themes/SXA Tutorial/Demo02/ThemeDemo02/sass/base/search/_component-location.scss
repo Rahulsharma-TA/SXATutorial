@@ -1,0 +1,105 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+.location-filter {
+    position: relative;
+    @import "../reset/inputs";
+    @import "../typehead/typehead";
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: $default-padding;
+    @include basic-styles($search-location-bg, $search-location-color);
+    @include basic-border(all, $search-location-border);
+    @include basic-font();
+    .component-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        >label {
+            display: inline-block;
+            font-weight: 600;
+            color: $search-location-color;
+            font-size: $font-size-x-small;
+            flex: 1;
+            align-self: center;
+            margin: $default-padding $default-padding 0 $default-padding;
+        }
+        >input {
+            flex: 1;
+            max-width: 100%;
+            width: 100%;
+            display: inline-block;
+            min-width: 100px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: none;
+            padding: 12px;
+            line-height: 14px;
+            font-family: inherit;
+        }
+        .twitter-typeahead {
+            margin: $default-padding $default-padding 0 $default-padding;
+            .location-search-box-input {
+                margin: 0;
+            }
+        }
+        >div,
+        >button,
+        >label,
+        >input,
+        >span {
+            order: 1;
+        }
+        >label,
+        >button {
+            flex-grow: 1;
+        }
+        >input,
+        >span {
+            flex-grow: 10;
+            width: auto;
+        }
+        .location-search-box-input {
+            width: 100%;
+            max-width: 100%;
+            min-width: 170px;
+            margin: $default-padding $default-padding 0 $default-padding;
+        }
+        .location-search-box-button {
+            max-width: 100%;
+            flex: 1;
+            padding: 12px;
+            color: $search-location-btn-color;
+            font-size: $font-size-x-small;
+            background-color: $search-location-btn-bg;
+            margin: $default-padding $default-padding 0 $default-padding;
+            &:hover {
+                background-color: $search-location-btn-bg !important;
+                cursor: pointer;
+            }
+        }
+        @media screen and (max-width: 992px) {
+            .location-search-box-input,
+            .twitter-typeahead {
+                min-width: 100px;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .location-search-box-input,
+            .twitter-typeahead {
+                min-width: 70px;
+            }
+        }
+        @media screen and (max-width: 576px) {
+            .location-search-box-input,
+            .twitter-typeahead {
+                min-width: 40px;
+            }
+        }
+    }
+    .tt-hint::-webkit-input-placeholder {
+        color: transparent;
+    }
+    .tt-hint::-moz-placeholder {
+        color: transparent;
+    }
+}

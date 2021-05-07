@@ -1,0 +1,83 @@
+@import "../../abstracts/vars";
+.page-selector {
+    text-align: center;
+    @include basic-padding();
+    .page-selector-list {
+        @include basic-border(all, $search-pagination-border);
+        @include basic-styles($search-pagination-bg, $search-pagination-color);
+        @include basic-padding();
+        li {
+            @include basic-border(all, $search-pagination-btn-border);
+            @include basic-padding(12px);
+            display: inline-block;
+            vertical-align: middle;
+            background-color: $search-pagination-btn-bg;
+            border-left-width: 0;
+            border-right-width: 0;
+            &:first-child {
+                margin-left: 0;
+            }
+            &.inactive {
+                a {
+                    color: $text-disabled !important;
+                    cursor: default;
+                }
+            }
+            &:nth-child(3) {
+                margin-left: $default-padding;
+                margin-left: $default-padding;
+                @include basic-border(left, $search-pagination-border);
+                border-radius: 5px 0 0 5px;
+            }
+            &:nth-last-child(3) {
+                margin-right: $default-padding;
+                border-radius: 0 5px 5px 0;
+                @include basic-border(right, $search-pagination-border);
+            }
+        }
+        .page-selector-item-first,
+        .page-selector-item-next {
+            border-radius: 5px;
+            border-left-width: 1px;
+            border-right-width: 1px;
+        }
+        .page-selector-item-previous,
+        .page-selector-item-last {
+            border-radius: 5px;
+            margin-left: 15px;
+            border-left-width: 1px;
+            border-right-width: 1px;
+        }
+        .page-selector-item-link,
+        .page-selector-item-next > a,
+        .page-selector-item-last > a,
+        .page-selector-item-first > a,
+        .page-selector-item-previous > a {
+            color: $search-pagination-btn-color;
+            display: block;
+            text-decoration: none;
+            font-weight: normal;
+            &:hover {
+                text-decoration: none;
+                color: $search-pagination-btn-active-color;
+            }
+            &:focus {
+                text-decoration: none;
+                color: $search-pagination-btn-active-color;
+            }
+            &.active {
+                font-weight: bold;
+                color: $search-pagination-btn-active-color;
+            }
+            &.inactive {
+                color: $text-disabled;
+                font-weight: bold;
+            }
+        }
+    }
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: $font-size-x-small;
+    }
+}

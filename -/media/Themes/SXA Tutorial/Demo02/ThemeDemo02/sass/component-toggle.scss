@@ -1,0 +1,86 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+@import "base/fontawesome/font-awesome-mix-var";
+.toggle {
+    @include basic-padding();
+    > .component-content {
+        @include basic-styles($toggle-bg, $toggle-color);
+        @include basic-border(all, $toggle-border);
+        details.toggle-content {
+            margin-top: -1px;
+            &[open] {
+                box-sizing: border-box;
+                summary.toggle-header {
+                    &:before {
+                        content: $fa-var-minus-square-o;
+                    }
+                    ~ .component {
+                        overflow: hidden;
+                        > .component-content {
+                            display: block;
+                        }
+                    }
+                }
+            }
+            summary.toggle-header {
+                @include basic-border(all, $toggle-header-border);
+                @include basic-padding(
+                    $default-padding $default-padding $default-padding 25px
+                );
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                box-sizing: border-box;
+                background: $toggle-header-bg;
+                cursor: pointer;
+                min-height: 25px;
+                &::-webkit-details-marker {
+                    display: none;
+                }
+                &:before {
+                    @include fa-icon();
+                    content: $fa-var-plus-square-o;
+                    position: absolute;
+                    font-size: 17px;
+                    left: 15px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                &.show {
+                    display: inline-block !important;
+                    color: $toggle-show-color;
+                }
+                .toggle-label {
+                    display: block;
+                    float: right;
+                    margin: 0 0 0 $default-padding;
+                    font-size: $font-size-x-small;
+                    font-weight: 600;
+                    p {
+                        margin-bottom: 0;
+                    }
+                }
+                ~ .component {
+                    > .component-content {
+                        animation-fill-mode: forwards;
+                        animation-iteration-count: 1;
+                        animation-delay: 0;
+                        animation-timing-function: linear;
+                        animation-direction: normal;
+                        display: none;
+                    }
+                }
+                + .component {
+                    @include basic-border(all, $toggle-header-border);
+                }
+                > .component {
+                    margin-top: -1px;
+                    box-sizing: border-box;
+                    padding-top: 0;
+                    @include basic-border(all, $toggle-content-border);
+                }
+            }
+        }
+    }
+    @import "base/animation/toggle";
+}

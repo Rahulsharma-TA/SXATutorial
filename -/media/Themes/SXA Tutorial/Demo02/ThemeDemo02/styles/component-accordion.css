@@ -1,0 +1,258 @@
+@charset "UTF-8";
+/* breakpoints */
+.on-page-editor .accordion .toggle-content [scfieldtype="rich text"] {
+  display: block;
+}
+
+.accordion {
+  background-color: #f7f7f7;
+  color: #5e5e5e;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d6d6d6;
+  font-size: 12px;
+}
+
+.accordion .component-content div ul.items {
+  overflow: hidden;
+}
+
+.accordion .component-content div ul.items li.item {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #d6d6d6;
+  padding: 15px 0 15px 0;
+}
+
+.accordion .component-content div ul.items li.item:last-child {
+  border-bottom: none;
+}
+
+.accordion .component-content div ul.items li.item.active > .scEnabledChrome > .toggle-header .field-heading:after {
+  content: "" !important;
+}
+
+.accordion .component-content div ul.items li.item.active > .toggle-header .field-heading:after {
+  content: "" !important;
+}
+
+.accordion .component-content div ul.items li.item div.toggle-header {
+  background-color: transparent;
+  cursor: pointer;
+  font-size: inherit;
+}
+
+.accordion .component-content div ul.items li.item div.toggle-header:hover {
+  background-color: transparent;
+}
+
+.accordion .component-content div ul.items li.item div.toggle-header div.label {
+  padding: 0;
+  text-align: left;
+  display: block;
+  background: transparent;
+  position: relative;
+  z-index: 3;
+}
+
+.accordion .component-content div ul.items li.item div.toggle-header div.label:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.accordion .component-content div ul.items li.item div.toggle-header div.label > .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.accordion .component-content div ul.items li.item div.toggle-header div.label div.component.content {
+  margin-top: 0;
+  border-width: 0;
+  padding: 15px 0;
+}
+
+.accordion .component-content div ul.items li.item div.toggle-header div.label div.component.content div.field-heading {
+  font-size: inherit;
+  font-weight: 600;
+}
+
+.accordion .component-content div ul.items li.item div.toggle-header div.label div.component.content div.field-heading:after {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  position: absolute;
+  display: block;
+  content: "";
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+}
+
+.accordion .component-content div ul.items li.item div.toggle-content {
+  background-color: transparent;
+  font-size: inherit;
+  padding-top: 0;
+}
+
+.accordion .component-content div ul.items li.item div.toggle-content > .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.accordion .component-content div ul.items li.item div.toggle-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.accordion .component-content div ul.items li.item div.toggle-content div.component.content {
+  border-width: 0;
+  margin-top: 0;
+  padding: 15px 0;
+}
+
+/* breakpoints */
+.accordion-horizontal {
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.accordion-horizontal.accordion-image .items .item {
+  box-sizing: border-box;
+  padding: 0 0 0 50px;
+  margin: 0;
+  min-height: 300px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d6d6d6;
+}
+
+.accordion-horizontal.accordion-image .items .item.active .toggle-header {
+  background: transparent !important;
+}
+
+.accordion-horizontal.accordion-image .items .item.active .toggle-content {
+  left: 0 !important;
+}
+
+.accordion-horizontal.accordion-image .items .item .toggle-header {
+  width: 50px;
+  border-right: none;
+  border-top: transparent;
+}
+
+.accordion-horizontal.accordion-image .items .item .toggle-header:before {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.accordion-horizontal.accordion-image .items .item .toggle-content {
+  padding: 0;
+}
+
+.accordion-horizontal .items {
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.accordion-horizontal .items .item {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-order: 1;
+  order: 1;
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0 0 0 40px;
+  min-height: 250px;
+  position: relative;
+}
+
+.accordion-horizontal .items .item.active .toggle-header {
+  background: transparent;
+  border-bottom-width: 0;
+  border-top-width: 0;
+  border-right-width: 0;
+}
+
+.accordion-horizontal .items .item .toggle-header {
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 11;
+  top: 0;
+  left: 0;
+  padding: 0;
+  width: 40px;
+  min-height: 100%;
+  background: transparent;
+  border-bottom-width: 0;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #d6d6d6;
+}
+
+.accordion-horizontal .items .item .toggle-header .component {
+  margin-top: 0px;
+}
+
+.accordion-horizontal .items .item .toggle-header .label {
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.accordion-horizontal .items .item .toggle-header .label p {
+  width: 200px;
+}
+
+.accordion-horizontal .items .item .toggle-header .label div.field-heading {
+  width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 16px;
+}
+
+.accordion-horizontal .items .item .toggle-header .label div.field-heading span.scWebEditInput {
+  width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.accordion-horizontal .items .item .toggle-content {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: auto;
+  z-index: 10;
+  height: 100%;
+  overflow: hidden;
+  text-align: left;
+  padding: 20px 10px;
+  border-top-width: 4px;
+  border-left-width: 0;
+}

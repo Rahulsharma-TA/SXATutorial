@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/* breakpoints */
+.sxa-archive {
+  padding: 15px 15px 15px 15px;
+}
+
+.sxa-archive > .component-content {
+  padding: 15px 15px 15px 15px;
+  background-color: #f7f7f7;
+  color: #5e5e5e;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d6d6d6;
+}
+
+.sxa-archive > .component-content ul {
+  margin-left: 5px;
+  display: none;
+  cursor: pointer;
+}
+
+.sxa-archive > .component-content ul li .group-header {
+  font-size: 12px;
+  position: relative;
+  display: block;
+  padding: 5px 5px 5px 30px;
+  line-height: 12px;
+}
+
+.sxa-archive > .component-content ul li .group-header:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 17px;
+  font-size: 1.7rem;
+  content: "";
+  line-height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 0;
+}
+
+.sxa-archive > .component-content ul li .group-header.opened:before {
+  content: "";
+}
+
+.sxa-archive > .component-content ul.level-1 {
+  display: block;
+  font-weight: 600;
+  margin-left: 0;
+}
+
+.sxa-archive > .component-content ul.level-1 > li > span.group-header {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.sxa-archive > .component-content ul.level-1 > li > ul.level-2 > li .archive-items {
+  display: none;
+}
+
+.sxa-archive > .component-content ul.level-1 > li > ul.level-2 > li .archive-items .archive-item {
+  /* breakpoints */
+  cursor: default;
+  padding: 5px;
+}
+
+.sxa-archive > .component-content ul.level-1 > li > ul.level-2 > li .archive-items .archive-item a {
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 13px;
+  color: #5e5e5e;
+}
+
+.sxa-archive > .component-content ul.level-1 > li > ul.level-2 > li .archive-items .archive-item a:hover, .sxa-archive > .component-content ul.level-1 > li > ul.level-2 > li .archive-items .archive-item a:focus {
+  color: #474747;
+  text-decoration: none;
+}
+
+.sxa-archive > .component-content ul.level-1 > li > ul.level-2 > li .archive-items .archive-item a.btn {
+  text-decoration: none;
+}

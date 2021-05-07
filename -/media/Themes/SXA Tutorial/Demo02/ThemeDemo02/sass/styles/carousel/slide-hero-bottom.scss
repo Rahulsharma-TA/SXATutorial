@@ -1,0 +1,39 @@
+.carousel.slide-hero-bottom {
+    $border-radius: 5px;
+    //background-color: $carousel-bg-dark;
+    padding: 0;
+    border-radius: $border-radius;
+    .wrapper {
+        padding-bottom: 0;
+        .component.content {
+            padding-left: 0;
+            padding-right: 0;
+            .field-slideimage {
+                text-align: center !important;
+            }
+            .slide-info {
+                //color:$carousel-nav-color-dark;
+                background-color: $carousel-nav-bg;
+                padding-left: 15px;
+                padding-right: 15px;
+                .field-slidetext {
+                    h1 {
+                        //color: $carousel-nav-color-dark;
+                    }
+                }
+            }
+        }
+        .nav {
+            margin-top: 0;
+            background: $carousel-nav-bg;
+            position: relative;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 0 0 $border-radius $border-radius;
+            .prev-text,
+            .next-text {
+                //color: $carousel-nav-color-dark
+            }
+        } //
+    }
+}

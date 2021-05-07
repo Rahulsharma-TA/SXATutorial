@@ -1,0 +1,59 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+.form {
+    @include basic-border(all, transparent);
+    margin: 10px 0;
+    font-size: 14px;
+    overflow: hidden;
+    table {
+        width: 100%;
+    }
+    @import "base/reset/inputs";
+    .scfRequired {
+        display: none !important;
+    }
+    input[type="checkbox"], input[type="radio"] {
+        left: auto;
+    }
+    .scfSectionContent {
+        >div {
+            &:hover [class$="GeneralPanel"]>[class$="UsefulInfo"] {
+                opacity: 1;
+            }
+            [class$="UsefulInfo"] {
+                transition: opacity 0.75s;
+                opacity: 0;
+                font-size: 12px;
+                margin-left: 5px;
+                position: absolute;
+                @include basic-border();
+                left: 0px;
+                top: -15px;
+                padding: 4px 8px;
+                max-width: 98%;
+                width: auto;
+            }
+        }
+        .scfCaptchaLimitGeneralPanel, .scfCaptchStrongTextPanel {
+            max-width: 100%;
+            width: auto;
+        }
+        .scfCaptchaLabel {
+            display: none;
+        }
+        .scfSectionContent .scfCaptchaGeneralPanel embed {
+            max-width: 180px;
+        }
+        input[type="image"] {
+            border: none;
+        }
+        .scfListBox {
+            background: none;
+            max-height: none;
+        }
+        .scfDateSelectorDay, .scfDateSelectorMonth, .scfDateSelectorYear {
+            width: 30%;
+        }
+    }
+    @import "styles/forms/*";
+}

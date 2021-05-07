@@ -1,0 +1,89 @@
+/* breakpoints */
+.twitter {
+  padding: 15px 15px 15px 15px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.twitter > .component-content {
+  padding: 15px 15px 15px 15px;
+  background-color: #f7f7f7;
+  color: #5e5e5e;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d6d6d6;
+}
+
+.twitter > .component-content > h1,
+.twitter > .component-content > h2,
+.twitter > .component-content > h3,
+.twitter > .component-content > h4,
+.twitter > .component-content > h5,
+.twitter > .component-content > h6 {
+  padding-bottom: 5px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #d6d6d6;
+  font-size: 12px;
+}
+
+.twitter > .component-content .twitter-follow-button {
+  margin: 10px 0 0;
+}
+
+.twitter > .component-content .tweet-item {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #5e5e5e;
+  padding: 5px 5px 5px 0;
+  margin-left: 5px;
+  overflow: hidden;
+  position: relative;
+  padding-left: 55px;
+}
+
+.twitter > .component-content .tweet-item:first-child {
+  border: none;
+  background: none;
+}
+
+.twitter > .component-content .tweet-header {
+  overflow: hidden;
+}
+
+.twitter > .component-content .tweet-profile {
+  display: block;
+  float: left;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.twitter > .component-content .tweet-avatar {
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+
+.twitter > .component-content .tweet-datetime {
+  display: block;
+  float: right;
+  text-decoration: none;
+}
+
+.twitter > .component-content .tweet-content {
+  margin-top: 5px;
+}
+
+.twitter > .component-content .tweet-footer > ul li {
+  display: inline;
+  padding-left: 5px;
+}
+
+.twitter > .component-content .tweet-footer > ul li:first-child {
+  padding: 0;
+}
+
+.twitter > .component-content .tweet-footer a {
+  text-decoration: none;
+}

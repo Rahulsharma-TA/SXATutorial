@@ -1,0 +1,43 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+@import "../../base/fontawesome/font-awesome-mix-var";
+.loupe-search-btn {
+    .component-content {
+        flex-wrap: nowrap;
+        .search-box-input,
+        .twitter-typeahead {
+            margin-right: 0;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        .search-box-button-with-redirect,
+        .search-box-button {
+            @include basic-border(all, $search-box-btn-bg);
+            position: relative;
+            text-indent: -99999px;
+            width: 20px;
+            background: $search-box-btn-bg !important;
+            border: none;
+            padding: 13px;
+            margin-left: 0;
+            margin-top: $default-padding;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            &:focus {
+                border-width: 0;
+            }
+            &:before {
+                @include fa-icon();
+                transform: translate(-50%, -50%);
+                position: absolute;
+                content: $fa-var-search;
+                top: 50%;
+                left: 50%;
+                font-size: 10px;
+                text-indent: 0;
+                font-size: 14px;
+                color: #fff;
+            }
+        }
+    }
+}

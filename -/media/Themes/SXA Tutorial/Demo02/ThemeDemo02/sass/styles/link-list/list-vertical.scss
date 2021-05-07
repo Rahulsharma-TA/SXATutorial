@@ -1,0 +1,15 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+.link-list.list-vertical {
+    >.component-content {
+        ul {
+            li {
+                display: block;
+                margin-top: $default-padding;
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}

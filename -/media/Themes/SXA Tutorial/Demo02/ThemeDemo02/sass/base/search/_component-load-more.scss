@@ -1,0 +1,15 @@
+.load-more {
+    @import "../reset/inputs";
+    @include basic-padding();
+    input[type="button"] {
+        background-color: $search-load-more-bg;
+        padding: 12px 45px;
+        border-radius: 5px;
+        border-color: $search-load-more-border;
+        color: $search-load-more-color;
+        font-size: $font-size-x-small;
+        &:hover {
+            background-color: $search-load-more-bg;
+        }
+    }
+}

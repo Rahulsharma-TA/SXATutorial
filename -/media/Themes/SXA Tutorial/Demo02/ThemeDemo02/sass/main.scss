@@ -1,0 +1,160 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+@import "base/fonts/fonts";
+@import "base/fontawesome/font-awesome";
+@import "base/reset/*";
+html {
+    font-size: 62.5%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-bottom: 0px;
+}
+
+body {
+    @include basic-font(!important);
+    position: relative;
+    overflow: auto;
+    color: $text-basic;
+    font-size: 14px;
+    line-height: 1.5;
+    background: $page-main;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a {
+    color: $text-basic;
+    cursor: pointer;
+    font-size: 0.85em;
+    &:hover {
+        color: $text-basic-active;
+    }
+}
+
+.btn.btn-secondary {
+    color: #fff;
+    background-color: #5e5e5e;
+    border-color: #5e5e5e;
+}
+
+.btn.btn-dark {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+h5 {
+    font-size: 0.83em;
+}
+
+h6 {
+    font-size: 0.67em;
+}
+
+#wrapper #header {
+    > .row {
+        background-color: $page-header;
+    }
+}
+
+#wrapper > main > div {
+    > .row {
+        background-color: $page-main;
+    }
+}
+
+#wrapper #footer {
+    > .row {
+        background-color: $page-footer;
+    }
+}
+
+.xa-variable {
+    border: 0px;
+    padding: 1px;
+    margin: 0px;
+    background-color: #ebebe4;
+    color: #545454;
+    user-select: none;
+    pointer-events: none;
+}
+
+//Navigation Bar fix
+#breadcrumbMenuSubcontrol_context_menu * {
+    box-sizing: initial;
+}
+
+//End navigation bar fix
+.sxa-icon {
+    background-color: $palette-xxx-light;
+    min-width: 80px;
+    min-height: 80px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.sxa-icon-playlist {
+    background-image: url("../images/icon-video");
+    background-size: 30%;
+    min-width: 143px;
+    min-height: 80px;
+}
+
+.on-page-editor {
+    header > .container > .row,
+    main > .container > .row,
+    footer > .container > .row {
+        border: 1px dashed $palette-xx-light;
+        border-collapse: collapse;
+    }
+    main > .container > .row {
+        border-top-width: 0px;
+        border-bottom-width: 0px;
+    }
+}
+
+.row .row {
+    flex: auto;
+}
+
+.scEmptyPlaceholder {
+    background-image: none;
+}
+
+.addthis,
+.addthis-smartlayers {
+    filter: grayscale(100);
+}
+
+//
+.plain-html {
+    @include basic-padding();
+}
+
+.row {
+    box-sizing: border-box;
+}

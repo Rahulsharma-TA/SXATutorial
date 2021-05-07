@@ -1,0 +1,70 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+.twitter {
+    @include basic-padding();
+    filter: grayscale(100%);
+    > .component-content {
+        @include basic-padding();
+        @include basic-styles($twitter-bg, $twitter-color);
+        @include basic-border(all, $twitter-border);
+        >h1,
+        >h2,
+        >h3,
+        >h4,
+        >h5,
+        >h6 {
+            padding-bottom: $default-padding;
+            @include basic-border(bottom);
+            font-size: $font-size-x-small;
+        }
+        .twitter-follow-button {
+            margin: 10px 0 0;
+        }
+        .tweet-item {
+            @include basic-border(top, $twitter-item-border);
+            padding: $default-padding $default-padding $default-padding 0;
+            margin-left: $default-padding;
+            overflow: hidden;
+            position: relative;
+            padding-left: 55px;
+            &:first-child {
+                border: none;
+                background: none;
+            }
+        }
+        .tweet-header {
+            overflow: hidden;
+        }
+        .tweet-profile {
+            display: block;
+            float: left;
+            text-decoration: none;
+            font-size: $font-size-x-small;
+        }
+        .tweet-avatar {
+            position: absolute;
+            left: 0;
+            top: 10px;
+        }
+        .tweet-datetime {
+            display: block;
+            float: right;
+            text-decoration: none;
+        }
+        .tweet-content {
+            margin-top: 5px;
+        }
+        .tweet-footer {
+            > ul li {
+                display: inline;
+                padding-left: 5px;
+                &:first-child {
+                    padding: 0;
+                }
+            }
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}

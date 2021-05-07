@@ -1,0 +1,39 @@
+/* breakpoints */
+.logout {
+  /* breakpoints */
+  padding: 15px 15px 15px 15px;
+}
+
+.logout a {
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 13px;
+  color: #5e5e5e;
+}
+
+.logout a:hover, .logout a:focus {
+  color: #474747;
+  text-decoration: none;
+}
+
+.logout a.btn {
+  text-decoration: none;
+}
+
+.logout .component-content {
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.logout .component-content > a,
+.logout .component-content > p {
+  padding: 15px 15px 15px 15px;
+  background-color: #5e5e5e;
+  color: #ffffff;
+  border-radius: 5px;
+  font-family: "Open Sans", Helvetica, Verdana, Tahoma, sans-serif;
+  display: block;
+  font-size: inherit;
+  color: inherit;
+  text-align: center;
+}

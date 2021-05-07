@@ -1,0 +1,70 @@
+.facet-slider {
+    @include basic-padding();
+    @include basic-styles( $search-slider-bg !important, $search-slider-color, 0);
+    .ui-slider {
+        position: relative;
+        width: 95%;
+        margin: 10px auto;
+        text-align: left;
+        .ui-widget-header a {
+            color: #ffffff;
+        }
+    }
+    .slider-value {
+        margin-top: $default-padding;
+        text-align: center;
+        font-size: $font-size-x-small;
+    }
+    .ui-slider-horizontal {
+        width: 95%;
+        margin: 5px 2%;
+        .ui-widget-header {
+            background: $slider-bg;
+            @include basic-border(all, $slider-border);
+            .ui-state-hover,
+            .ui-state-focus {
+                background: $slider-bg-active;
+            }
+        }
+    }
+    .ui-corner-all {
+        border-radius: 10px;
+    }
+    .ui-widget-content {
+        background: $slider-bg;
+        border-color: $slider-border;
+        height: 8px;
+        .ui-state-default {
+            background-color: $slider-btn-bg;
+        }
+        .ui-state-hover,
+        .ui-state-focus {
+            background: $slider-btn-bg-active;
+        }
+    }
+    .ui-slider-handle {
+        border-color: $slider-btn-border;
+        background: $slider-btn-bg;
+        box-shadow: 0 0 5px 1px $palette-xxx-light;
+        width: 20px;
+        height: 20px;
+        top:50%;
+        transform: translateY(-50%);
+    }
+    .bottom-remove-filter {
+        margin-top: $default-padding;
+        width: 100%;
+        button,
+        input[type="button"] {
+            width: 100%;
+            color: $search-slider-clearbtn-color;
+            font-size: $font-size-x-small;
+            background-color: $search-slider-clearbtn-bg;
+            border-color: $search-slider-clearbtn-border;
+            &:hover {
+                background-color: $search-slider-clearbtn-bg !important;
+                cursor: pointer;
+            }
+        }
+    }
+}

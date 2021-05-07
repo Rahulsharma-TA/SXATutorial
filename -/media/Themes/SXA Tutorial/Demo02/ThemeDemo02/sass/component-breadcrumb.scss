@@ -1,0 +1,109 @@
+@import "abstracts/mixins";
+@import "abstracts/vars";
+@import "base/fontawesome/font-awesome-mix-var";
+.breadcrumb.component {
+    @include basic-padding();
+    >.component-content {
+        @include basic-styles($breadcrumb-bg, $breadcrumb-color);
+        @include basic-border(all, $breadcrumb-border);
+        nav {
+            ol {
+                @include clearfix();
+                list-style: none;
+                li.breadcrumb-item {
+                    position: relative;
+                    display: block;
+                    float: left;
+                    &.last {
+                        .separator {
+                            display: none;
+                        }
+                        a {
+                            font-weight: 600;
+                            color: $breadcrumb-color-active;
+                        }
+                    }
+                    &.item-hide {
+                        &:hover {
+                            >ol {
+                                display: none;
+                            }
+                        }
+                    }
+                    &:hover {
+                        >ol {
+                            display: block;
+                            position: absolute;
+                            top: 23px;
+                            left: auto;
+                            z-index: 100;
+                            border-radius: 4px;
+                        }
+                    }
+                    >.navigation-title {
+                        display: inline-block;
+                        vertical-align: middle;
+                        a {
+                            font-size: $breadcrumb-fs-lvl1-title;
+                            color: $breadcrumb-color;
+                            text-decoration: none;
+                            font-weight: 400;
+                            :hover {
+                                color: $breadcrumb-color-active;
+                            }
+                        }
+                    }
+                    .separator {
+                        color: $breadcrumb-color-active;
+                        margin: 0 $default-padding;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                    >ol {
+                        @include basic-border();
+                        background: $bg-basic-color;
+                        box-sizing: border-box;
+                        display: none;
+                        margin: 0;
+                        box-shadow: 0 0 8px 4px #cfcfcf;
+                        li {
+                            @include basic-border(bottom, transparent);
+                            box-sizing: border-box;
+                            display: inline-block;
+                            vertical-align: middle;
+                            position: relative;
+                            float: none;
+                            margin: 0;
+                            padding: 8px 20px 8px 15px;
+                            width: 100%;
+                            min-width: 140px;
+                            cursor: pointer;
+                            &:hover {
+                                background: $breadcrumb-dropdown-bg-active;
+                                color: $breadcrumb-dropdown-text-active;
+                                a {
+                                    color: $breadcrumb-dropdown-text-active !important;
+                                }
+                            }
+                            &:last-child {
+                                border-bottom-width: 0;
+                            }
+                            .navigation-title {
+                                a {
+                                    display: block;
+                                    padding: 2px 0 2px 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } // This class can be added by js
+    &.breadcrumb-navigation {
+        overflow: visible;
+    }
+    @import "variants/breadcrumb/*";
+}
+
+@import "styles/breadcrumb/*";

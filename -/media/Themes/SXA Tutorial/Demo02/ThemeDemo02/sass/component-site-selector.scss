@@ -1,0 +1,28 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+.market-selector {
+    @import "base/reset/inputs";
+    @include basic-padding($default-padding);
+    @include basic-font();
+    .market-selector-inner {
+        .market-selector-content {
+            .styled-select {
+                &.market {}
+                form {
+                    select {
+                        @include basic-styles($site-selector-bg, $site-selector-color);
+                        @include basic-padding(10px);
+                        height: auto;
+                        font-size: $font-size-x-small;
+                        border-color: $site-selector-border;
+                        font-family: inherit;
+                        option {
+                            font-family: inherit;
+                            padding: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

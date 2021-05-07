@@ -1,0 +1,11 @@
+
+{{ for i_loc in (sc_followmany i_item "Locations") }}
+  <h2 style="padding:10px">{{sc_field i_loc "City"}}</h2>
+  <p>{{sc_field i_loc 'Address'}}
+{{ end }}
+<hr/>
+{{if sc_evaluate i_item 'Rule01'}}
+<p>Today is Monday</p>
+{{ else }}
+<p>Today is not Monday</p>
+{{ end }} 

@@ -1,0 +1,500 @@
+//
+// Variables
+// --------------------------------------------------
+//== Colors
+//Backgrounds colors
+$palette-xxx-dark: #000000;
+$palette-xx-dark: #2b2b2b;
+$palette-x-dark: #474747;
+$palette-dark: #5e5e5e;
+$palette-default: #969696;
+$palette-light: #b3b3b3;
+$palette-x-light: #cccccc;
+$palette-xx-light: #d6d6d6;
+$palette-xxx-light: #e3e3e3;
+$palette-xxxx-light: #f0f0f0;
+$palette-xxxxx-light: #f7f7f7;
+$palette-xxxxxx-light: #ffffff;
+$palette-red: #ca231d;
+$palette-green: #a2ca81;
+$palette-yellow: #f3c32f;
+$bg-transparent: transparent !default;
+$bg-basic-color: $palette-xxxxx-light !default;
+$bg-basic-color-active: $palette-x-light !default;
+$bg-light-gray: $palette-xxx-light !default;
+$bg-light-gray-active: $palette-xxx-light !default;
+$bg-black: $palette-xxx-dark;
+$bg-black-active: $palette-x-dark;
+//Text colors
+$text-white: $palette-xxxxxx-light !default;
+$text-heading-color: $palette-xx-dark !default;
+$text-basic: $palette-dark !default;
+$text-basic-active: $palette-x-dark !default;
+$text-blue: #89c6cc !default;
+$text-blue-active: #15909c !default;
+$text-submenu-active: $palette-xx-dark !default;
+$text-disabled: $palette-light !default;
+$text-black: $palette-xxx-dark !default;
+//Border colors
+$border-gray: $palette-x-light !default;
+$border-white: $palette-xxxxxx-light !default;
+$border-basic-color: $palette-xxx-dark !default;
+$border-basic-active: $palette-x-dark !default;
+//Styles for each component separately
+//Accordion
+$accordion-bg: $palette-xxxxx-light;
+$accordion-border: $palette-xx-light;
+$accordion-color: $palette-dark;
+$accordion-header-bg: transparent;
+$accordion-header-bg-active: transparent;
+$accordion-header-border: transparent;
+$accordion-toggled-bg: transparent;
+$accordion-item-border: $palette-xx-light;
+//archive
+$archive-bg: $palette-xxxxx-light;
+$archive-border: $palette-xx-light;
+$archive-color: $palette-dark;
+//Breadcrumb
+$breadcrumb-bg: transparent;
+$breadcrumb-color: $palette-default;
+$breadcrumb-border: transparent;
+$breadcrumb-color-active: $palette-xx-dark;
+$breadcrumb-dropdown-bg: $palette-xxxxx-light;
+$breadcrumb-dropdown-border: $palette-xx-light;
+$breadcrumb-dropdown-bg-active: $palette-xxx-light;
+$breadcrumb-dropdown-text-active: $palette-dark;
+//Buttons colors
+$btn-green-light: #a0ce4e;
+$btn-green: #92be43;
+$btn-red-active: #c34e30;
+$btn-red: #bc4526;
+//Carousel
+$carousel-bg: $palette-xxx-light;
+$carousel-info-bg: $palette-xxxx-light;
+$carousel-nav-color: $palette-light;
+$carousel-nav-color-active: $palette-dark;
+$carousel-nav-border: transparent;
+$carousel-nav-bg: $palette-default;
+//Container component
+$container-title-row-bg: $palette-xxx-light;
+//Event List
+$event-list-bg: $palette-xxxxx-light;
+$event-list-color: $palette-dark;
+$event-list-border: $palette-x-light;
+$event-list-item-bg: $palette-xxxxx-light;
+$event-list-item-color: $palette-dark;
+$event-list-item-color-active: $palette-default;
+$event-list-item-border: $palette-xx-light;
+$event-list-title-border: transparent;
+$event-list-title-color: $palette-dark;
+//Calendar
+$calendar-bg: $palette-xxxxx-light;
+$calendar-border: $palette-x-light;
+$calendar-color: $palette-dark;
+$calendar-header-bg: $palette-xxxxx-light;
+$calendar-header-color: $palette-dark;
+$calendar-event-bg: $palette-xxxxxx-light;
+$calendar-day-color-active: $palette-xxxxxx-light;
+$calendar-border: $palette-xx-light;
+$calendar-today-bg: $palette-xxxxxx-light;
+$calendar-event-color: $palette-dark;
+$calendar-btn-color: $palette-xxxxxx-light;
+$calendar-btn-bg: $palette-xxxx-light;
+$calendar-btn-bg-active: $palette-xxx-light;
+$calendar-btn-border: $palette-xx-light;
+//FeedFeed
+$feed-bg: $palette-xxxxx-light;
+$feed-border: $palette-x-light;
+$feed-color: $palette-dark;
+$feed-title-border: $palette-x-light;
+$feed-item-bg: transparent;
+$feed-item-color: $palette-dark;
+$feed-item-border: $palette-x-light;
+//Field Editor
+$field-editor-bg: $palette-xxxxx-light;
+$field-editor-border: $palette-xx-light;
+$field-editor-color: $palette-dark;
+$field-editor-table-border: $palette-x-light;
+$field-editor-color-header: $palette-dark;
+//File List
+$file-list-bg: $palette-xxxxx-light;
+$file-list-border: $palette-x-light;
+$file-list-color: $palette-dark;
+$file-list-item-bg: transparent;
+$file-list-title-color: $palette-dark;
+$file-list-title-border: $palette-x-light;
+$file-list-item-color: $palette-dark;
+$file-list-item-title-color: $palette-dark;
+$file-list-item-update-color: $palette-default;
+$file-list-item-download-color: $palette-default;
+$file-list-item-download-bg: $palette-default;
+$file-list-item-download-bg-active: $palette-default;
+$file-list-item-color-active: $palette-x-dark;
+$file-list-item-borer: $palette-x-light;
+//Flip
+$flip-bg: transparent;
+$flip-border: $palette-xx-light;
+$flip-slides-bg: $palette-xxxxx-light;
+$flip-slides-second-bg: $palette-xxx-light;
+$flip-color: $palette-dark;
+//Gallery
+$galleria-container-bg: $palette-xxx-light;
+$galleria-thumbnails-container :$palette-x-light;
+$gallery-info-bg: $palette-xxxxx-light;
+$gallery-info-border: $palette-x-light;
+$gallery-info-text: $palette-dark;
+$gallery-nav-active: $palette-x-dark;
+$gallery-nav: $palette-dark;
+$gallery-counter-color: $palette-dark;
+//Language selector
+$lang-selector-bg: $palette-xxxxx-light;
+$lang-selector-border: $palette-xx-light;
+$lang-selector-color: $palette-dark;
+$lang-selector-item-bg: $palette-xxxxx-light;
+$lang-selector-item-bg-active: $palette-xxx-light;
+$lang-selector-item-border: transparent;
+$lang-selector-item-border-active: transparent;
+//Site selector
+$site-selector-color: $palette-dark;
+$site-selector-border: $palette-xx-light;
+$site-selector-bg: $palette-xxxxx-light;
+//Link List
+$link-list-bg: $palette-xxxxx-light;
+$link-list-border: $palette-xx-light;
+$link-list-color: $palette-dark;
+$link-list-header-border: transparent;
+$link-list-header-color: $palette-dark;
+$link-list-items-bg: transparent;
+$link-list-item-bg: transparent;
+$link-list-item-color: $palette-default;
+$link-list-item-color-active: $palette-dark;
+$link-list-item-border-active: transparent;
+//Login
+$login-bg: $palette-xxxxx-light;
+$login-border: $palette-xx-light;
+$login-color: $palette-dark;
+$login-validation-error: $palette-red;
+$login-submit-color: $palette-xxxxxx-light;
+$login-submit-bg: $palette-dark;
+//Logout
+$logout-bg: transparent;
+$logout-link-text-color: $palette-xxxxxx-light;
+$logout-link-text-color-active: $palette-xxxxxx-light;
+$logout-link-border: $palette-dark;
+$logout-link-bg: $palette-dark;
+//Map
+$map-bg: $palette-xxxxx-light;
+$map-border: $palette-xx-light;
+$map-color: $palette-dark;
+//Page List
+$page-list-bg: transparent;
+$page-list-color: $palette-dark;
+$page-list-border: $palette-xx-light;
+$page-list-wrapper: $palette-xxxxx-light;
+$page-list-item-bg: transparent;
+$page-list-item-color: $palette-dark;
+$page-list-item-border: $palette-xx-light;
+//Pagination
+$list-pagination-bg: $palette-xxxxx-light;
+$list-pagination-color: $palette-dark;
+$list-pagination-border: $palette-xx-light;
+$list-pagination-btn-bg: $palette-xxx-light;
+$list-pagination-btn-border: $palette-xx-light;
+$list-pagination-btn-color: $palette-x-dark;
+$list-pagination-active-bg: $palette-xxx-light;
+$list-pagination-active-color: $palette-x-dark;
+$list-pagination-active-border: $palette-xx-light;
+//Play list
+$play-list-bg: $palette-x-light;
+$play-list-item-color: $palette-dark;
+$play-list-item-color-active: $palette-dark;
+$play-list-nav-active: $palette-dark;
+$play-list-item-bg: $palette-x-light;
+$play-list-item-active-bg: $palette-x-light;
+$play-list-border: transparent;
+$play-list-title-border: $palette-light;
+//Promo
+$promo-bg: $palette-xxxxx-light;
+$promo-border: $palette-xx-light;
+$promo-color: $palette-dark;
+$promo-text-bg: transparent;
+$promo-bg-hero: $palette-xxx-dark;
+$promo-hero-text-color: $palette-xxxxxx-light;
+$promo-shadow-border: $palette-xxx-dark;
+$promo-btn-bg: $palette-dark;
+$promo-btn-color: $palette-xxxxxx-light;
+$promo-btn-border: $palette-x-dark;
+//Rich Text Content
+$rich-content-bg: transparent;
+$rich-content-color: $palette-dark;
+$rich-content-border: none;
+//Search
+$search-filter: $palette-dark;
+$search-filter-border: transparent;
+//Menu colors
+$menu-hover-color: #1b809e;
+$menu-active-color: #176f89;
+//Navigation
+$nav-bg: $palette-light;
+$nav-color-root: $palette-xxxxxx-light;
+$nav-color-root-active: $palette-xxxxxx-light;
+$nav-border-root: $palette-xx-light;
+$nav-border-root-active: $palette-x-dark;
+$nav-color-submenu: $palette-xxxxxx-light;
+$nav-color-submenu-active: $palette-xxxxxx-light;
+$nav-bg-root: $palette-light;
+$nav-bg-root-active: $palette-default;
+$nav-bg-submenu: $palette-default;
+$nav-bg-submenu-active: $palette-dark;
+$nav-bg-submenu-third: $palette-dark;
+$nav-bg-submenu-third-active: $palette-x-dark;
+$nav-border-submenu: $palette-default;
+$nav-submenu-item-border: transparent;
+$nav-submenu-border-active: $palette-default;
+//Social Media Share
+$social-media-share-bg: transparent;
+$social-media-share-color: transparent;
+$social-media-share-border: transparent;
+//Divider
+$divider-border: $palette-x-light;
+//Tabs
+$tab-heading-bg: $palette-xxxx-light;
+$tab-heading-hover-bg: $palette-xxx-light;
+$tab-heading-active-bg: $palette-xxxxx-light;
+$tab-heading-color: $palette-xx-dark;
+$tab-heading-active-color: $palette-xxx-dark;
+$tab-container-bg: $palette-xxxxx-light;
+$tab-container-border: $palette-xx-light;
+//Title
+$title-bg: transparent;
+$title-border: transparent;
+$title-color: $palette-dark;
+$title-color-active: $palette-dark;
+$title-text-border: $palette-xx-light;
+//Toggle
+$toggle-bg: $palette-xxxxx-light;
+$toggle-border: $palette-xx-light;
+$toggle-color: $palette-dark;
+$toggle-header-bg: transparent;
+$toggle-header-border: transparent;
+$toggle-content-bg: transparent;
+$toggle-content-border: transparent;
+$toggle-show-color: $palette-dark;
+//Search Components
+$search-btn-bg: transparent;
+$search-btn-active-bg: transparent;
+$search-btn-active-border: transparent;
+//Image component
+$image-bg: transparent;
+$image-border: transparent;
+$image-color: $palette-dark;
+//Media Link Component
+$media-link-bg: $palette-xxxxx-light;
+$media-link-border: $palette-xx-light;
+$media-link-color: $palette-dark;
+$media-link-color-active: $palette-x-dark;
+//Tag Cloud
+$tag-cloud-bg: $palette-xxxxx-light;
+$tag-cloud-border: $palette-xx-light;
+$tag-cloud-color: $palette-dark;
+$tag-cloud-item-bg: $palette-xxxxxx-light;
+$tag-cloud-item-border: $palette-x-light;
+//Tag List
+$tag-list-bg: $palette-xxxxx-light;
+$tag-list-border: $palette-xx-light;
+$tag-list-color: $palette-dark;
+$tag-list-item-bg: $palette-xx-light;
+$tag-list-item-border: $palette-x-light;
+//Link Component
+$link-bg: transparent;
+$link-text-color: $palette-default;
+$link-text-color-active: $palette-dark;
+$link-border: transparent;
+//Overlay
+$overlay-bg: $palette-xxx-light;
+//Search Components
+$search-title-border: $palette-dark;
+$search-title-color: $palette-dark;
+$search-bg: transparent;
+$search-item-color: $palette-dark;
+$search-item-background: $palette-xxxxx-light;
+$search-item-color-active: $palette-xxx-dark;
+$search-item-border: $palette-xx-light;
+$search-item-border-active: $palette-xx-light;
+//
+//Search Facet Summary
+$search-facet-summary-border:transparent;
+$search-facet-summary-background:transparent;
+$search-facet-summary-item-color:$text-basic;
+$search-facet-summary-item-color-horizontal:$text-basic;
+$search-facet-summary-item-border:$border-gray;
+$search-facet-summary-item-border-horizontal:$border-basic-color;
+$search-facet-summary-clear-color:$palette-red;
+$search-facet-summary-clear-color-horizontal:$text-blue;
+$search-filter-radius-active: $palette-dark;
+$search-filter-radius-border: $palette-xx-light;
+$search-filter-radius-bg: transparent;
+//
+$search-filter-slider-border-active: $palette-xxx-dark;
+$search-filter-slider-bg-active: $palette-x-light;
+$search-filter-slider-btn-border: $palette-x-light;
+$search-filter-slider-btn-bg: $palette-xxx-light;
+$search-filter-slider-btn-bg-active: $palette-xxxx-light;
+//Serach Pagination
+$search-pagination-bg: $palette-xxxxx-light;
+$search-pagination-color: $palette-dark;
+$search-pagination-border: $palette-xx-light;
+$search-pagination-btn-bg: $palette-xxx-light;
+$search-pagination-btn-border: $palette-xx-light;
+$search-pagination-btn-color: $palette-x-dark;
+$search-pagination-btn-active-bg: $palette-xxx-light;
+$search-pagination-btn-active-border: $palette-xx-light;
+$search-pagination-btn-active-color: $palette-x-dark;
+//Search
+$search-checklist-bg: transparent;
+$search-checklist-border: transparent;
+$search-checklist-color: $palette-dark;
+$search-checklist-title-color: $palette-dark;
+$search-checklist-item-color: $palette-dark;
+$search-checklist-btn-color: $palette-xxxxxx-light;
+$search-checklist-btn-bg: $palette-dark;
+$search-checklist-clearbtn-bg: $palette-xxxxxx-light;
+$search-checklist-clearbtn-border: $palette-dark;
+$search-checklist-clearbtn-color: $palette-dark;
+//Search range slider
+$search-range-slider-bg: transparent;
+$search-range-slider-border: transparent;
+$search-range-slider-color: $palette-dark;
+$search-range-slider-title-color: $palette-dark;
+$search-range-slider-item-color: $palette-dark;
+$search-range-slider-clearbtn-bg: $palette-xxxxxx-light;
+$search-range-slider-clearbtn-border: $palette-dark;
+$search-range-slider-clearbtn-color: $palette-dark;
+//Search slider
+$search-slider-bg: transparent;
+$search-slider-border: transparent;
+$search-slider-color: $palette-dark;
+$search-slider-title-color: $palette-dark;
+$search-slider-item-color: $palette-dark;
+$search-slider-clearbtn-bg: $palette-xxxxxx-light;
+$search-slider-clearbtn-border: $palette-dark;
+$search-slider-clearbtn-color: $palette-dark;
+//Serach Slider common
+$slider-bg: $palette-x-light;
+$slider-border: $palette-x-light;
+$slider-bg-active: $palette-dark;
+$slider-border-active: $palette-dark;
+$slider-btn-bg: $palette-xxxxxx-light;
+$slider-btn-bg-active: $palette-xxxxxx-light;
+$slider-btn-border: $palette-xxxxxx-light;
+//Search selector
+$serach-selector-variant-color: $palette-xx-light;
+$serach-selector-variant-color-active: $palette-dark;
+//Search page size
+$search-page-size-bg: $palette-xxxxx-light;
+$search-page-size-color: $palette-dark;
+$search-page-size-border: $palette-xx-light;
+//Search date filter
+$search-date-filter-bg: transparent;
+$search-date-filter-color: $palette-dark;
+$search-date-filter-border: transparent;
+$search-date-filter-input-bg: $palette-xxxxx-light;
+$search-date-filter-input-color: $palette-dark;
+$search-date-filter-input-border: $palette-xx-light;
+$search-date-filter-clearbtn-bg: $palette-xxxxxx-light;
+$search-date-filter-clearbtn-border: $palette-dark;
+$search-date-filter-clearbtn-color: $palette-dark;
+//Search location filter
+$search-location-bg: transparent;
+$search-location-color: $palette-dark;
+$search-location-border: transparent;
+$search-location-input-bg: $palette-xxxxx-light;
+$search-location-input-color: $palette-dark;
+$search-location-input-border: $palette-xx-light;
+$search-location-btn-bg: $palette-dark;
+$search-location-btn-border: $palette-dark;
+$search-location-btn-color: $palette-xxxxxx-light;
+// Search filter dropdown
+$search-dropdown-bg: transparent;
+$search-dropdown-color: $palette-dark;
+$search-dropdown-border: transparent;
+$search-dropdown-clearbtn-bg: $palette-xxxxxx-light;
+$search-dropdown-clearbtn-border: $palette-dark;
+$search-dropdown-clearbtn-color: $palette-dark;
+$search-dropdown-select-border: $palette-xx-light;
+$search-dropdown-select-color: $palette-xx-light;
+$search-dropdown-select-bg: $palette-xxxxx-light;
+// Search managed range
+$search-managed-range-bg: transparent;
+$search-managed-range-color: $palette-dark;
+$search-managed-range-border: $palette-xx-light;
+$search-managed-range-select-border: $palette-xx-light;
+$search-managed-range-select-color: $palette-xx-light;
+$search-managed-range-select-bg: $palette-xxxxx-light;
+//Search sort result
+$search-sort-result-bg: $palette-xxxxx-light;
+$search-sort-result-color: $palette-dark;
+$search-sort-result-border: $palette-xx-light;
+// Search load more
+$search-load-more-bg: transparent;
+$search-load-more-border: $palette-dark;
+$search-load-more-color: $palette-dark;
+// Search box
+$search-box-bg: transparent;
+$search-box-border: transparent;
+$search-box-color: $palette-xx-light;
+$search-box-input-bg: $palette-xxxxx-light;
+$search-box-input-color: $palette-dark;
+$search-box-input-border: $palette-xx-light;
+$search-box-btn-bg: $palette-dark;
+$search-box-btn-border: $palette-dark;
+$search-box-btn-color: $palette-xxxxxx-light;
+//Typehead
+$tt-bg: $palette-xxxxx-light;
+$tt-color: $palette-dark;
+$tt-border: $palette-xx-light;
+$tt-bg-active: $palette-xxx-light;
+$tt-color-active: $palette-dark;
+$tt-price-color: $palette-dark;
+//Video
+$video-control-bg: $palette-xxxxx-light;
+$video-time-color: $palette-dark;
+$video-time-total-bg: $palette-xxx-dark;
+$video-time-handle-border: $palette-x-light;
+$video-time-handle-bg: $palette-xxx-dark;
+//Form component
+$form-bg: $palette-xxxxx-light;
+$form-border: $palette-xx-light;
+$form-color: $palette-dark;
+//Twitter
+$twitter-bg: $palette-xxxxx-light;
+$twitter-border: $palette-xx-light;
+$twitter-color: $palette-dark;
+$twitter-title-border: $palette-dark;
+$twitter-item-border: $palette-dark;
+// Privacy warning
+$privacy-bg: $palette-x-dark;
+$privacy-border: transparent;
+$privacy-color: $palette-xxxxxx-light;
+$privacy-btn-bg: $palette-dark;
+$privacy-btn-border: $palette-x-dark;
+$privacy-btn-color: $palette-xxxxxx-light;
+//Main
+$page-header: $palette-xxxx-light;
+$page-main: $palette-xxxxxx-light;
+$page-footer: $palette-xxxx-light;
+$page-border-color: $palette-default;
+//Styled background
+$gray-background: $palette-xxx-light;
+$gray-color: $palette-x-dark;
+$clean-background: $palette-xxxxx-light;
+$clean-color: $palette-x-dark;
+$dark-background: $palette-xxx-dark;
+$dark-color: $palette-xxxxxx-light;
+$color-background: $palette-xxxxx-light;
+$color-color: $palette-x-dark;
+//Border default
+//Default setups
+$default-border: $palette-xx-light;
+$default-color: $palette-dark;
+$default-bg: $palette-xxxxx-light;

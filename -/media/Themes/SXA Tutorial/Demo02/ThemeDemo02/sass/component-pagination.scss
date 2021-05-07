@@ -1,0 +1,67 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+.list-pagination {
+    @include basic-padding();
+    font-size: $font-size-x-small;
+    >.component-content {
+        text-align: center;
+        @include basic-border(all, $list-pagination-btn-border);
+        @include basic-styles($list-pagination-bg, $list-pagination-color);
+        @include basic-padding();
+        nav {
+            display: inline-block;
+            font-size: 0;
+            >span,
+            >a {
+                @include basic-padding(12px);
+                @include basic-border(all, $list-pagination-btn-border);
+                display: inline-block;
+                font-size: $font-size-x-small;
+                font-weight: normal;
+                background-color: $list-pagination-btn-bg;
+                color: $list-pagination-btn-color;
+                border-radius: 5px;
+                margin-left: $default-padding;
+                &:hover {
+                    color: $list-pagination-active-color;
+                    background: $list-pagination-active-bg;
+                    text-decoration: none;
+                }
+                &:focus {
+                    text-decoration: none;
+                    color: $list-pagination-active-color;
+                }
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+            .sxa-paginationnumber {
+                border-left-width: 0;
+                border-right-width: 0;
+                border-radius: 0;
+                margin-left: 0;
+                &:nth-child(3) {
+                    margin-left: $default-padding;
+                    @include basic-border(left, $list-pagination-btn-border);
+                    border-radius: 5px 0 0 5px;
+                }
+                &:nth-last-child(3) {
+                    border-radius: 0 5px 5px 0;
+                    @include basic-border(right, $list-pagination-btn-border);
+                }
+            }
+            >span.active {
+                background: $list-pagination-active-bg;
+                color: $list-pagination-active-color;
+                font-weight: 600;
+            }
+            >span.inactive {
+                color: $text-disabled;
+                &:hover {
+                    background-color: $list-pagination-btn-bg;
+                    @include basic-border(all, $list-pagination-btn-border);
+                }
+            }
+        }
+    }
+}

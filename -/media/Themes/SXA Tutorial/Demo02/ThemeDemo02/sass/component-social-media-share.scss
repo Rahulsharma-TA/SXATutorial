@@ -1,0 +1,27 @@
+@import "abstracts/mixins";
+@import "abstracts/vars";
+.social-media-share {
+    background: $social-media-share-bg;
+    filter: grayscale(100%);
+    >.component-content {
+        ul {
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            li {
+                height: 20px;
+                order: 1;
+                margin: $default-padding;
+                &:first-child {
+                    margin-left: 0;
+                }
+                .fb_iframe_widget {
+                    display: block;
+                    margin-top: -2px;
+                }
+            }
+        }
+    }
+}

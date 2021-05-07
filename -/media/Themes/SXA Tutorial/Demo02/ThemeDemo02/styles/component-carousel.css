@@ -1,0 +1,237 @@
+@charset "UTF-8";
+/* breakpoints */
+.carousel {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0;
+}
+
+.carousel > .component-content {
+  background: #e3e3e3;
+  position: relative;
+}
+
+.carousel > .component-content .carousel-inner .wrapper {
+  overflow: hidden;
+}
+
+.carousel > .component-content .carousel-inner .wrapper .slides {
+  position: relative;
+}
+
+.carousel > .component-content .carousel-inner .wrapper .slides:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.carousel > .component-content .carousel-inner .wrapper .slides li.slide .component.content {
+  padding: 0;
+}
+
+.carousel > .component-content .carousel-inner .wrapper .slides li.slide .component.content .component-content .field-slideimage {
+  text-align: center !important;
+}
+
+.carousel > .component-content .carousel-inner .wrapper .slides li.slide .component.content .component-content .field-slideimage img {
+  height: auto;
+}
+
+.carousel > .component-content .carousel-inner .wrapper .slides li.slide .component.content .component-content .slide-info {
+  background-color: #f0f0f0;
+  padding: 5px;
+}
+
+.carousel > .component-content .carousel-inner .wrapper .nav {
+  background: #f0f0f0;
+  padding-bottom: 5px;
+}
+
+.carousel > .component-content .carousel-inner .wrapper .nav .prev-text {
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 10px;
+}
+
+.carousel > .component-content .carousel-inner .wrapper .nav .prev-text:hover, .carousel > .component-content .carousel-inner .wrapper .nav .prev-text:active {
+  text-decoration: none;
+}
+
+.carousel > .component-content .carousel-inner .wrapper .nav .prev-text:after {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  display: block;
+  font-size: 20px;
+}
+
+.carousel > .component-content .carousel-inner .wrapper .nav .nav-items {
+  display: inline-block;
+  position: relative;
+  height: 25px;
+  min-width: 20px;
+  margin: 0 15px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.carousel > .component-content .carousel-inner .wrapper .nav .nav-items:before {
+  left: -9px;
+  background-position: -154px -152px;
+}
+
+.carousel > .component-content .carousel-inner .wrapper .nav .nav-items:after {
+  right: -9px;
+  background-position: -225px -152px;
+}
+
+.carousel > .component-content .carousel-inner .wrapper .nav .nav-items .sxa-bullets,
+.carousel > .component-content .carousel-inner .wrapper .nav .nav-items .sxa-numbers {
+  position: relative;
+  height: 25px;
+  float: left;
+  width: 20px;
+  box-sizing: border-box;
+  line-height: 18px;
+}
+
+.carousel > .component-content .carousel-inner .wrapper .nav .nav-items .sxa-numbers:hover {
+  color: #5e5e5e;
+}
+
+.carousel > .component-content .carousel-inner .wrapper .nav .nav-items .sxa-numbers.active {
+  font-weight: bold;
+}
+
+.carousel > .component-content .carousel-inner .wrapper .nav .nav-items .sxa-bullets {
+  margin: 5px;
+  border-radius: 10px;
+  width: 9px;
+  height: 9px;
+  background-color: #b3b3b3;
+}
+
+.carousel > .component-content .carousel-inner .wrapper .nav .nav-items .sxa-bullets.active {
+  width: 10px;
+  height: 10px;
+  background-color: #5e5e5e;
+}
+
+.carousel > .component-content .carousel-inner .wrapper .nav .next-text {
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 10px;
+}
+
+.carousel > .component-content .carousel-inner .wrapper .nav .next-text:hover, .carousel > .component-content .carousel-inner .wrapper .nav .next-text:active {
+  text-decoration: none;
+  color: #5e5e5e;
+}
+
+.carousel > .component-content .carousel-inner .wrapper .nav .next-text:after {
+  content: "";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: block;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    padding: 0;
+  }
+}
+
+.image-full-size img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.carousel.slide-hero-bottom {
+  padding: 0;
+  border-radius: 5px;
+}
+
+.carousel.slide-hero-bottom .wrapper {
+  padding-bottom: 0;
+}
+
+.carousel.slide-hero-bottom .wrapper .component.content {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.carousel.slide-hero-bottom .wrapper .component.content .field-slideimage {
+  text-align: center !important;
+}
+
+.carousel.slide-hero-bottom .wrapper .component.content .slide-info {
+  background-color: #969696;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.carousel.slide-hero-bottom .wrapper .nav {
+  margin-top: 0;
+  background: #969696;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 0 0 5px 5px;
+}
+
+.carousel.slide-hero > .component-content .carousel-inner .wrapper {
+  padding-bottom: 0;
+}
+
+.carousel.slide-hero > .component-content .carousel-inner .wrapper .slides li.slide .component.content {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.carousel.slide-hero > .component-content .carousel-inner .wrapper .slides li.slide .component.content .component-content .field-slideimage {
+  min-height: 200px;
+}
+
+.carousel.slide-hero > .component-content .carousel-inner .wrapper .slides li.slide .component.content .component-content .slide-info {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  z-index: 999;
+  background-color: transparent;
+}
+
+.carousel.slide-hero > .component-content .carousel-inner .wrapper .nav {
+  height: 0;
+  margin-top: 0;
+}
+
+.carousel.slide-hero > .component-content .carousel-inner .wrapper .nav .prev-text,
+.carousel.slide-hero > .component-content .carousel-inner .wrapper .nav .next-text {
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.carousel.slide-hero > .component-content .carousel-inner .wrapper .nav .nav-items {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}

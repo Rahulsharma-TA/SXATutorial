@@ -1,0 +1,70 @@
+@import "abstracts/mixins";
+@import "abstracts/vars";
+@import "base/fontawesome/font-awesome-mix-var";
+.sxa-archive {
+    @include basic-padding();
+    >.component-content {
+        @include basic-padding();
+        @include basic-styles($archive-bg, $archive-color);
+        @include basic-border(all, $archive-border);
+        ul {
+            margin-left: $default-padding;
+            display: none;
+            cursor: pointer;
+            li {
+                .group-header {
+                    font-size: $archive-fs-lvl1-header;
+                    position: relative;
+                    display: block;
+                    padding: $default-padding $default-padding $default-padding $large-margin;
+                    line-height: $archive-fs-lvl1-header;
+                    &:before {
+                        @include fa-icon();
+                        @include font-size(1.7);
+                        content: $fa-var-plus-square-o;
+                        line-height: 10px;
+                        position: absolute;
+                        top: 50%;
+                        left: 5px;
+                        transform: translateY(-50%);
+                        padding: 0;
+                    }
+                    &.opened {
+                        &:before {
+                            content: $fa-var-minus-square-o;
+                        }
+                    }
+                }
+            }
+            &.level-1 {
+                display: block;
+                font-weight: 600;
+                margin-left: 0;
+                >li {
+                    >span.group-header {
+                        font-weight: bold;
+                        font-size: $archive-fs-lvl1-header;
+                    }
+                    >ul.level-2 {
+                        >li {
+                            >span.group-header {}
+                            .archive-items {
+                                display: none;
+                                .archive-item {
+                                    @import "base/reset/links";
+                                    cursor: default;
+                                    padding: $default-padding;
+                                    .navigation-title {
+                                        a {}
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import "variants/archive/*";

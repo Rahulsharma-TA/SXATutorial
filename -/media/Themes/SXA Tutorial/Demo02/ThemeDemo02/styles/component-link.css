@@ -1,0 +1,40 @@
+/* breakpoints */
+.link {
+  background: transparent;
+  /* breakpoints */
+  padding: 15px 15px 15px 15px;
+  font-size: 12px;
+}
+
+.link a {
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 13px;
+  color: #5e5e5e;
+}
+
+.link a:hover, .link a:focus {
+  color: #474747;
+  text-decoration: none;
+}
+
+.link a.btn {
+  text-decoration: none;
+}
+
+.link > .component-content {
+  background-color: transparent;
+  color: #969696;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.link > .component-content a {
+  color: inherit;
+}
+
+.link > .component-content a:hover {
+  color: #5e5e5e;
+}

@@ -1,0 +1,58 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+.promo {
+    @include basic-padding();
+    overflow: hidden;
+    box-sizing: border-box;
+    border-radius: 5px;
+    >.component-content {
+        @include basic-border(all, $promo-border);
+        @include basic-styles($promo-bg, $promo-color);
+        font-size: $font-size-x-small;
+        height: 100%;
+        .field-promoicon {
+            overflow: hidden;
+            width: 100%;
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
+        .promo-text {
+            padding: $default-padding;
+            background-color: $promo-text-bg;
+            .field-promotext {
+                padding-bottom: $default-padding;
+            }
+            .field-promolink {
+                font-size: $font-size-x-small;
+                background-color: $promo-btn-bg;
+                border-radius: 5px;
+                display: inline-block;
+                @include basic-border(all, $promo-btn-border);
+                @include basic-padding();
+                a {
+                    color: $promo-btn-color;
+                }
+                &:hover {
+                    background-color: $promo-btn-bg !important;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .zg-height-fix {
+        .field-promoicon {
+            margin-top: 100px;
+        }
+    }
+    &.image-full-size {
+        img {
+            margin-bottom: 10px;
+        }
+    }
+    @import "base/richtext/richtext";
+}
+
+@import "styles/promo/*";

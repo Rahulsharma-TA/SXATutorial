@@ -1,0 +1,25 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+.title {
+    @include basic-padding();
+    >.component-content {
+        @include basic-styles($title-bg, $title-color);
+        @include basic-border(all, $title-border);
+        h1,
+        .field-title {
+            a {
+                @include basic-border(bottom, $title-text-border);
+                font-size: $font-extrabig;
+                color: $title-color;
+                display: block;
+                text-decoration: none;
+                cursor: pointer;
+                padding-bottom: $default-padding;
+                &:hover {
+                    color: $title-color-active;
+                }
+            }
+        }
+    }
+    @import "variants/title/*";
+}

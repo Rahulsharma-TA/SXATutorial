@@ -1,0 +1,121 @@
+@import "abstracts/mixins";
+@import "abstracts/vars";
+.tabs {
+    @include basic-padding();
+    overflow: hidden;
+    position: relative;
+    background: none;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    .component-content {
+        .tabs-inner {
+            .tabs-heading {
+                box-sizing: border-box;
+                margin-bottom: 0;
+                white-space: nowrap;
+                display: flex;
+                transform: translateY(1px);
+                li {
+                    @include basic-border(all, $tab-container-border);
+                    @include basic-border(bottom, $tab-container-border);
+                    border-bottom-width: 0;
+                    display: inline-block;
+                    background: $tab-heading-bg;
+                    width: auto;
+                    cursor: pointer;
+                    &:first-child {
+                        border-radius: 3px 0 0 0;
+                        margin-left: 0;
+                    }
+                    &:last-child {
+                        border-radius: 0 3px 0 0;
+                    }
+                    &:hover {
+                        @include basic-border(top, $tab-container-border);
+                        background: $tab-heading-hover-bg;
+                    }
+                    &.active {
+                        background: $tab-heading-active-bg;
+                        border-bottom-width: 0;
+                        padding-top: 0;
+                        &:hover {
+                            background: $tab-heading-active-bg;
+                        }
+                        >div {
+                            >.columns {
+                                margin-bottom: 5px;
+                            }
+                        }
+                        a {
+                            color: $tab-heading-active-color;
+                        }
+                        .component.content {
+                            .component-content {
+                                .field-heading {}
+                            }
+                        }
+                    }
+                    >div {
+                        @include clearfix();
+                        padding: 3px 10px;
+                        display: block;
+                        text-decoration: none;
+                        color: $tab-heading-color;
+                        .field-heading {
+                            font-size: $tab-font-header;
+                        }
+                        >.columns {
+                            float: none;
+                            margin-bottom: 1px;
+                        }
+                    }
+                    .component.content {
+                        margin: 5px 0;
+                        border: none;
+                        .component-content {
+                            .field-heading {}
+                        }
+                    }
+                }
+            }
+            .tabs-container {
+                @include basic-border(all, $tab-container-border);
+                background: $tab-container-bg;
+                border-radius: 0 5px 5px 5px;
+                .tab {
+                    @include clearfix();
+                    display: none;
+                    padding: 10px;
+                    &.active {
+                        display: block;
+                        .component.content {
+                            .component-content {
+                                .field-content {}
+                            }
+                        }
+                    }
+                    .component.content {
+                        border: none;
+                        .component-content {
+                            .field-content {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tab-slider {
+    position: absolute;
+    background: $tab-heading-bg;
+    cursor: pointer;
+    border: 2px solid $border-basic-color;
+    vertical-align: center;
+    width: 15px;
+    text-indent: -9999px;
+    z-index: 10;
+}
+
+@import "styles/tabs/*";

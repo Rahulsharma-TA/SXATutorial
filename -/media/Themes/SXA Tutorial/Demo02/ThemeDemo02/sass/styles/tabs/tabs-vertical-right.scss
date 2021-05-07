@@ -1,0 +1,37 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+.tabs.tabs-vertical {
+    &.tabs-vertical-right {
+        .tabs-inner {
+            display: flex;
+        }
+        .tabs-heading {
+            order: 2;
+            margin-left: 0;
+            transform: translate(0, 0);
+            li {
+                @include basic-border(all, $tab-container-border);
+                transform: translateX(-1px);
+                &:first-child {
+                    border-radius: 0 3px 0 0;
+                }
+                &:last-child {
+                    border-radius: 0 0 3px 0;
+                }
+                &.active {
+                    @include basic-border(left,transparent);
+                    border-right-color:$tab-container-border;
+                    border-left-width: 0;
+                    transform: translateX(-1px);
+                    a {
+                        border: none;
+                    }
+                }
+            }
+        }
+       .tabs-container {
+            border-radius: 3px 0 0 3px;
+        }
+
+    }
+}

@@ -1,0 +1,98 @@
+/* breakpoints */
+.feed {
+  padding: 15px 15px 15px 15px;
+}
+
+.feed > .component-content {
+  padding: 15px 15px 15px 15px;
+  background-color: #f7f7f7;
+  color: #5e5e5e;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cccccc;
+}
+
+.feed > .component-content > h1,
+.feed > .component-content > h2,
+.feed > .component-content > h3,
+.feed > .component-content > h4,
+.feed > .component-content > h5,
+.feed > .component-content > h6 {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #cccccc;
+  padding: 0 0 5px 0;
+  font-size: 12px;
+}
+
+.feed > .component-content ul .feed-item {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #cccccc;
+  padding: 5px 5px 5px 0;
+  background: transparent;
+  color: #5e5e5e;
+}
+
+.feed > .component-content ul .feed-item:first-child {
+  border-color: transparent;
+}
+
+.feed > .component-content ul .feed-item:last-child {
+  padding-bottom: 0;
+}
+
+.feed > .component-content ul .feed-item .feed-title a {
+  font-size: 14px;
+  font-size: 1.4rem;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  color: #5e5e5e;
+}
+
+.feed > .component-content ul .feed-item .feed-datetime {
+  font-size: 11px;
+  font-size: 1.1rem;
+  float: left;
+}
+
+.feed > .component-content ul .feed-item .feed-author {
+  font-size: 11px;
+  font-size: 1.1rem;
+  float: right;
+}
+
+.feed > .component-content ul .feed-item .feed-description {
+  font-size: 13px;
+  font-size: 1.3rem;
+  padding-top: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  clear: both;
+  color: #5e5e5e;
+}
+
+.feed > .component-content ul .feed-item .feed-description img {
+  margin: 0 4px;
+}
+
+/* breakpoints */
+.feed.feed-grid .feed-item {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d6d6d6;
+  width: 32%;
+  margin: 0 1% 10px 0;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 639px) {
+  .feed.feed-grid .feed-item {
+    width: 100%;
+  }
+}

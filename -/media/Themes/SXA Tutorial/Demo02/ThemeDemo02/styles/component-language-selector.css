@@ -1,0 +1,1870 @@
+@charset "UTF-8";
+/* breakpoints */
+.language-selector {
+  padding: 5px 5px 5px 5px;
+}
+
+.language-selector > .component-content {
+  position: relative;
+  font-size: 12px;
+  background-color: #f7f7f7;
+  color: #5e5e5e;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d6d6d6;
+  padding: 12px 10px 12px 10px;
+}
+
+.language-selector > .component-content .flags-ad {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -25px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ae {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3125px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-af {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -50px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ag {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -75px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ai {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -100px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-al {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -125px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-am {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -150px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ao {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -175px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-aq {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -200px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ar {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -225px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-as {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -250px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-at {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -275px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-au {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -300px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-aw {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -325px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ax {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -350px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-az {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -375px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ba {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -400px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-bb {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -425px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-bd {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -450px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-be {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -475px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-bf {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -500px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-bg {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -525px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-bh {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -550px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-bi {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -575px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-bj {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -600px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-bl {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -625px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-bm {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -650px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-bn {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -675px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-bo {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -700px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-bq {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -725px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-br {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -750px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-bs {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -775px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-bt {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -800px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-bv {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -825px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-bw {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -850px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-by {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -875px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-bz {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -900px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ca {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -925px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-cc {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -950px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-cd {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -975px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-cf {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1000px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-cg {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1025px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ch {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1050px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ci {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1075px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ck {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1100px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-cl {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1125px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-cm {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1150px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-cn {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1175px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-co {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1200px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-cr {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1225px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-cu {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1250px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-cv {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1275px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-cw {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1300px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-cx {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1325px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-cy {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1350px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-cz {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1375px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-de {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1400px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-dj {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1425px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-dk {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1450px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-dm {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1475px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-do {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1500px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-dz {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1525px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ec {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1550px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ee {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1575px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-eg {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1600px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-eh {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1625px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-er {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1650px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-es {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1675px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-et {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1700px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-fi {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1725px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-fj {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1750px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-fk {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1775px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-fm {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1800px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-fo {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1825px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-fr {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1850px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ga {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1875px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-gb {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1900px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-gd {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1925px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ge {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1950px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-gf {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -1975px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-gg {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2000px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-gh {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2025px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-gi {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2050px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-gl {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2075px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-gm {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2100px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-gn {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2125px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-gp {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2150px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-gq {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2175px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-gr {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2200px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-gs {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2225px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-gt {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2250px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-gu {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2275px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-gw {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2300px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-gy {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2325px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-hk {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2350px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-hm {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2375px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-hn {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2400px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-hr {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2425px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ht {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2450px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-hu {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2475px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-id {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2500px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ie {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2525px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-il {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2550px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-im {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2575px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-in {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2600px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-io {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2625px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-iq {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2650px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ir {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2675px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-is {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2700px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-it {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2725px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-je {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2750px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-jm {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2775px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-jo {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2800px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-jp {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2825px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ke {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2850px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-kg {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2875px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-kh {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2900px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ki {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2925px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-km {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2950px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-kn {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -2975px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-kp {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3000px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-kr {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3025px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-kw {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3050px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ky {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3075px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-kz {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3100px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-la {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px 0px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-lb {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3150px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-lc {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3175px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-li {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3200px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-lk {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3225px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-lr {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3250px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ls {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3275px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-lt {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3300px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-lu {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3325px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-lv {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3350px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ly {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3375px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ma {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3400px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-mc {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3425px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-md {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3450px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-me {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3475px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-mf {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3500px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-mg {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3525px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-mh {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3550px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-mk {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3575px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ml {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3600px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-mm {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3625px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-mn {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3650px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-mo {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3675px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-mp {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3700px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-mq {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3725px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-mr {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3750px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ms {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3775px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-mt {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3800px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-mu {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3825px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-mv {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3850px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-mw {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3875px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-mx {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3900px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-my {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3925px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-mz {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3950px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-na {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -3975px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-nc {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4000px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ne {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4025px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-nf {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4050px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ng {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4075px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ni {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4100px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-nl {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4125px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-no {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4150px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-np {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4175px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-nr {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4200px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-nu {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4225px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-nz {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4250px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-om {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4275px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-pa {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4300px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-pe {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4325px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-pf {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4350px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-pg {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4375px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ph {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4400px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-pk {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4425px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-pl {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4450px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-pm {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4475px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-pn {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4500px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-pr {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4525px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ps {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4550px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-pt {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4575px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-pw {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4600px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-py {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4625px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-qa {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4650px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-re {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4675px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ro {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4700px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-rs {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4725px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ru {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4750px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-rw {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4775px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-sa {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4800px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-sb {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4825px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-sc {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4850px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-sd {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4875px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-se {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4900px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-sg {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4925px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-sh {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4950px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-si {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -4975px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-sj {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5000px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-sk {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5025px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-sl {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5050px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-sm {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5075px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-sn {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5100px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-so {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5125px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-sr {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5150px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ss {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5175px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-st {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5200px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-sv {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5225px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-sx {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5250px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-sy {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5275px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-sz {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5300px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-tc {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5325px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-td {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5350px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-tf {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5375px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-tg {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5400px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-th {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5425px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-tj {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5450px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-tk {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5475px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-tl {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5500px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-tm {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5525px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-tn {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5550px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-to {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5575px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-tr {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5600px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-tt {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5625px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-tv {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5650px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-tw {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5675px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-tz {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5700px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ua {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5725px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ug {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5750px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-um {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5775px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-us {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5800px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-uy {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5825px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-uz {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5850px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-va {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5875px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-vc {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5900px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ve {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5925px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-vg {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5950px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-vi {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -5975px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-vn {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -6000px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-vu {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -6025px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-wf {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -6050px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ws {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -6075px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-ye {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -6100px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-yt {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -6125px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-za {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -6150px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-zm {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -6175px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-zw {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -6200px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .flags-zz {
+  background-image: url(../images/sprite-flag);
+  background-position: 0px -6225px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-selector > .component-content .language-selector-select-item {
+  cursor: pointer;
+  background-color: #f7f7f7;
+}
+
+.language-selector > .component-content .language-selector-select-item .language-selector-select-link {
+  padding-left: 25px;
+  font-size: inherit;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: block;
+  position: relative;
+  padding-right: 5px;
+}
+
+.language-selector > .component-content .language-selector-select-item .language-selector-select-link:hover {
+  text-decoration: none;
+}
+
+.language-selector > .component-content .language-selector-select-item:after {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  position: absolute;
+  right: 7px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.language-selector > .component-content .language-selector-item-container {
+  padding: 0;
+  position: absolute;
+  top: 95%;
+  min-width: 220px;
+  z-index: 10;
+  background: #f7f7f7;
+  display: none;
+  left: -1px;
+  right: -1px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d6d6d6;
+  border-top-color: transparent;
+  border-radius: 0 0 3px 3px;
+}
+
+.language-selector > .component-content .language-selector-item-container .language-selector-item {
+  padding: 5px;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  background-color: #f7f7f7;
+}
+
+.language-selector > .component-content .language-selector-item-container .language-selector-item:hover {
+  background-color: #e3e3e3;
+  border-bottom: 1px solid transparent;
+}
+
+.language-selector > .component-content .language-selector-item-container .language-selector-item:first-child {
+  margin-bottom: 0;
+}
+
+.language-selector > .component-content .language-selector-item-container .language-selector-item a {
+  text-decoration: none;
+  color: #5e5e5e;
+  font-weight: normal;
+  padding-left: 25px;
+  background-repeat: no-repeat;
+}
+
+.language-selector > .component-content .language-selector-link {
+  padding: 0px 20px 0 30px;
+}
+
+.language-selector .language-selector-select-item > a {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.language-selector .language-selector-item a {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.language-selector.language-selector-item-container-slideup .language-selector-item-container {
+  box-shadow: 0 2px 9px 0px #b3b3b3;
+  padding: 0;
+  position: absolute;
+  top: auto;
+  bottom: 110%;
+  min-width: 220px;
+  z-index: 10;
+  background: #f7f7f7;
+  display: none;
+  left: 0;
+  right: 0;
+}

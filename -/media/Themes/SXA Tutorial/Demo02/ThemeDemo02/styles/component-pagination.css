@@ -1,0 +1,93 @@
+/* breakpoints */
+.list-pagination {
+  padding: 15px 15px 15px 15px;
+  font-size: 12px;
+}
+
+.list-pagination > .component-content {
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d6d6d6;
+  background-color: #f7f7f7;
+  color: #5e5e5e;
+  border-radius: 5px;
+  padding: 15px 15px 15px 15px;
+}
+
+.list-pagination > .component-content nav {
+  display: inline-block;
+  font-size: 0;
+}
+
+.list-pagination > .component-content nav > span,
+.list-pagination > .component-content nav > a {
+  padding: 12px 12px 12px 12px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d6d6d6;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: normal;
+  background-color: #e3e3e3;
+  color: #474747;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.list-pagination > .component-content nav > span:hover,
+.list-pagination > .component-content nav > a:hover {
+  color: #474747;
+  background: #e3e3e3;
+  text-decoration: none;
+}
+
+.list-pagination > .component-content nav > span:focus,
+.list-pagination > .component-content nav > a:focus {
+  text-decoration: none;
+  color: #474747;
+}
+
+.list-pagination > .component-content nav > span:first-child,
+.list-pagination > .component-content nav > a:first-child {
+  margin-left: 0;
+}
+
+.list-pagination > .component-content nav .sxa-paginationnumber {
+  border-left-width: 0;
+  border-right-width: 0;
+  border-radius: 0;
+  margin-left: 0;
+}
+
+.list-pagination > .component-content nav .sxa-paginationnumber:nth-child(3) {
+  margin-left: 5px;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #d6d6d6;
+  border-radius: 5px 0 0 5px;
+}
+
+.list-pagination > .component-content nav .sxa-paginationnumber:nth-last-child(3) {
+  border-radius: 0 5px 5px 0;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #d6d6d6;
+}
+
+.list-pagination > .component-content nav > span.active {
+  background: #e3e3e3;
+  color: #474747;
+  font-weight: 600;
+}
+
+.list-pagination > .component-content nav > span.inactive {
+  color: #b3b3b3;
+}
+
+.list-pagination > .component-content nav > span.inactive:hover {
+  background-color: #e3e3e3;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d6d6d6;
+}

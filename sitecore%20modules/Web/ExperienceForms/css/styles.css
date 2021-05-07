@@ -1,0 +1,40 @@
+.demo01-newsForm{
+	padding:0;
+	margin:0;
+	width:100%;
+	background-color: rgb(39, 47, 59);
+}
+input.footer-Subscribe {
+    background: red;
+    margin-left: 40%;
+	margin-top: 10px;
+}
+
+.component.sitecore-form.col-12 {
+    padding: 0px 15px;
+	background-color: rgb(39, 47, 59);
+}
+
+.component.sitecore-form.col-12 .component-content{
+    padding: 0px 15px;
+	background-color: rgb(39, 47, 59);
+}
+.component.rich-text.col-12{
+	padding: 0px 15px;
+	background-color: rgb(39, 47, 59);
+}
+.component.link-list.col-12 {
+    background-color: rgb(39, 47, 59);
+}
+.row.component.column-splitter {
+    background-color: rgb(39, 47, 59);
+}
+
+.demo01-newsForm.hidden{
+display:none;
+}
+
+p.ThankYouMessage{
+	color: white;
+font-size: large;
+}

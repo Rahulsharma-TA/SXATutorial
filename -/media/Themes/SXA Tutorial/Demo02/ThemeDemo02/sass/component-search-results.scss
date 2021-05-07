@@ -1,0 +1,162 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+.search-results {
+    @import "base/reset/inputs";
+    @include basic-styles($search-bg);
+    @include basic-padding(15px 0 0 0);
+
+    position: relative;
+
+    &.vertical {
+        .search-result-list {
+            @include basic-padding(0 15px);
+            > li {
+                @include basic-border(all, $search-item-border);
+                background-color: $search-item-background;
+                position: relative;
+                width: 100%;
+                padding: 20px;
+                border-radius: 5px;
+                margin-bottom: 15px;
+                .field-title {
+                    display: block;
+                    margin-bottom: 10px;
+                    a {
+                        font-size: $font-size-x-small;
+                        line-height: 20px;
+                        text-decoration: none;
+                        font-weight: 600;
+                        display: block;
+                        color: $link-list-item-color;
+                    }
+                }
+                .field-content {
+                    font-size: $font-size-x-small;
+                }
+                a {
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+                &:hover {
+                    @include basic-border(bottom, $search-item-border-active);
+                }
+            }
+        }
+    }
+    &.horizontal {
+        .search-result-list {
+            @include clearfix();
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            &:after {
+                display: none;
+            }
+            > li {
+                @include basic-border(all, $search-item-border);
+                background-color: $search-item-background;
+                position: relative;
+                min-height: 230px;
+                margin-bottom: 30px;
+                min-width: 21%;
+                max-width: 21%;
+                flex: 1;
+                padding: 20px;
+                border-radius: 5px;
+                margin-left: 2%;
+                margin-right: 2%;
+                .field-title {
+                    display: block;
+                    padding: 0 5px;
+                    text-align: center;
+                    a {
+                        font-size: $font-size-x-small;
+                        line-height: 20px;
+                        text-decoration: none;
+                        font-weight: 600;
+                    }
+                }
+                a {
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+                &:hover {
+                    @include basic-border(bottom, $search-item-border-active);
+                }
+            }
+        }
+    }
+    .search-results-overlay {
+        display: none;
+    }
+    &.loading-in-progress {
+        min-height: 200px;
+        .search-result-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            &:after {
+                content: "";
+                background-image: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSJibGFjayI+CiAgPHBhdGggIG9wYWNpdHk9Ii4yNSIgZD0iTTE2IDAgQTE2IDE2IDAgMCAwIDE2IDMyIEExNiAxNiAwIDAgMCAxNiAwIE0xNiA0IEExMiAxMiAwIDAgMSAxNiAyOCBBMTIgMTIgMCAwIDEgMTYgNCIvPgogIDxwYXRoIGZpbGw9JyNkZGRkZGQnIGQ9Ik0xNiAwIEExNiAxNiAwIDAgMSAzMiAxNiBMMjggMTYgQTEyIDEyIDAgMCAwIDE2IDR6Ij4KICAgIDxhbmltYXRlVHJhbnNmb3JtIGF0dHJpYnV0ZU5hbWU9InRyYW5zZm9ybSIgdHlwZT0icm90YXRlIiBmcm9tPSIwIDE2IDE2IiB0bz0iMzYwIDE2IDE2IiBkdXI9IjAuOHMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogIDwvcGF0aD4KPC9zdmc+);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                top: 50%;
+                left: 0;
+                right: 0;
+                margin: -30px auto 0;
+            }
+        }
+    }
+    &.loading-more-in-progress {
+        &:after {
+            content: "";
+            display: block;
+            @include loading-gif();
+            background-size: 50% 50%;
+            height: 100px;
+        }
+    }
+    .no-results {
+        padding: 5px;
+    }
+    @media only screen and (max-width: 992px) {
+        &.horizontal {
+            .search-result-list {
+                > li {
+                    min-width: 45%;
+                    max-width: 45%;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        &.horizontal {
+            .search-result-list {
+                > li {
+                    min-width: 95%;
+                    max-width: 95%;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 576px) {
+        &.horizontal {
+            .search-result-list {
+                > li {
+                    min-width: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

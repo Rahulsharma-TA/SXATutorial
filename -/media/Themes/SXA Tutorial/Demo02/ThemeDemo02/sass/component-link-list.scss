@@ -1,0 +1,46 @@
+@import "abstracts/mixins";
+@import "abstracts/vars";
+@import "base/fontawesome/font-awesome-mix-var";
+.link-list {
+    @include basic-padding();
+    border-radius: 4px;
+    >.component-content {
+        @include basic-styles($link-list-bg, $link-list-color);
+        @include basic-padding();
+        @include basic-border(all, $link-list-border);
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            @include basic-border(bottom, $link-list-header-border);
+            color: $link-list-header-color;
+            margin-bottom: $default-padding;
+        }
+        ul {
+            background: $link-list-items-bg;
+            li {
+                background: $link-list-item-bg;
+                display: inline-block;
+                a {
+                    display: inline;
+                    color: $link-list-item-color;
+                    position: relative;
+                    padding-right: $default-padding;
+                    font-size: $font-size-x-small;
+                    text-decoration: none;
+                    &:hover {
+                        color: $link-list-item-color-active;
+                        text-decoration: none;
+                        border-bottom: 1px solid $link-list-item-border-active;
+                    }
+                }
+            }
+        }
+    }
+    @import "base/links/*";
+    @import "variants/link-list/*";
+}
+
+@import "styles/link-list/*";

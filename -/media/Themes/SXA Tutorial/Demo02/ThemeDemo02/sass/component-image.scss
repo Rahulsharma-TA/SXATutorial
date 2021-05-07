@@ -1,0 +1,28 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+.image {
+    @include basic-padding();
+    >.component-content {
+        @include basic-styles($image-bg, $image-color);
+        @include basic-border($image-border);
+        a {
+            display: inline-block;
+            max-width: 100%;
+            width: 100%;
+            img {
+                max-width: 100%;
+                height: auto;
+                width: 100%;
+                border-radius: 5px;
+            }
+        }
+        .image-caption {
+            display: block;
+            font-size: $font-size-x-small;
+            color: $image-color;
+            padding: $default-padding $default-padding 0 0;
+        }
+    }
+}
+
+@import "styles/image/*";

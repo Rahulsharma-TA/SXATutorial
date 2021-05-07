@@ -1,0 +1,60 @@
+/* breakpoints */
+.on-page-editor .map > .component-content > div {
+  height: 92% !important;
+}
+
+.map {
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 15px 15px 15px 15px;
+}
+
+.map > .component-content {
+  background-color: #f7f7f7;
+  color: #5e5e5e;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d6d6d6;
+}
+
+.map .gm-style * {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.map .gm-style > div:first-child:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url("../images/map") no-repeat 50% 50%;
+  background-size: contain;
+  background-color: #e3e3e3;
+  z-index: 10;
+}
+
+.map .map-canvas {
+  position: relative;
+}
+
+.map img {
+  max-width: none;
+}
+
+.map .MicrosoftMap .infobox-close {
+  position: static;
+  float: right;
+}
+
+.map .MicrosoftMap .Infobox .infobox-body {
+  height: 100%;
+}
+
+.map .MicrosoftMap .Infobox .infobox-info {
+  height: 100%;
+  box-sizing: border-box;
+}

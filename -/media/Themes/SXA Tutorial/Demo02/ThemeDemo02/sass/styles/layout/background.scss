@@ -1,0 +1,61 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+%cover-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cover-background {
+    >.component-content {
+        @extend %cover-bg;
+    }
+}
+
+.fix-background {
+    >.component-content {
+        @extend %cover-bg;
+        @include fixed-bg(left top);
+    }
+}
+
+.parallax-background {
+    >.component-content {
+        @extend %cover-bg;
+        @include fixed-bg(50% 0);
+        @include respond-to(mobile-large) {
+            background-attachment: scroll;
+        }
+    }
+}
+
+.row-splitter>.container-gray-background>.row,
+.column-splitter>.container-gray-background .scEmptyPlaceholder,
+.column-splitter>.container-gray-background >.component,
+.container-gray-background>.component-content {
+    background-color: $gray-background;
+    color: $gray-color;
+}
+
+.row-splitter>.container-clean-background>.row,
+.column-splitter>.container-clean-background .scEmptyPlaceholder,
+.column-splitter>.container-clean-background >.component,
+.container-clean-background>.component-content {
+    background-color: $clean-background;
+    color: $clean-color;
+}
+
+.row-splitter>.container-dark-background>.row,
+.column-splitter>.container-dark-background .scEmptyPlaceholder,
+.column-splitter>.container-dark-background  >.component,
+.container-dark-background>.component-content {
+    background-color: $dark-background;
+    color: $dark-color;
+}
+
+.row-splitter>.container-color-background>.row,
+.column-splitter>.container-color-background .scEmptyPlaceholder,
+.column-splitter>.container-color-background  >.component,
+.container-color-background>.component-content {
+    background-color: url("../images/lines") 0 0 repeat;
+    color: $color-color;
+}

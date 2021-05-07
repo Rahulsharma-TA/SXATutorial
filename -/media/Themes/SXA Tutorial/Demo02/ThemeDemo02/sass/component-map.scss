@@ -1,0 +1,59 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+.on-page-editor {
+    .map {
+        >.component-content {
+            >div {
+                height: 92% !important;
+            }
+        }
+    }
+}
+
+.map {
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    @include basic-padding();
+    >.component-content {
+        @include basic-styles($map-bg, $map-color);
+        @include basic-border(all, $map-border);
+    }
+    .gm-style {
+        * {
+            filter: grayscale(100%);
+        }
+        >div:first-child {
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                background: url("../images/map") no-repeat 50% 50%;
+                background-size: contain;
+                background-color: #e3e3e3;
+                z-index: 10;
+            }
+        }
+    }
+    .map-canvas {
+        position: relative;
+    }
+    img {
+        max-width: none;
+    }
+    .MicrosoftMap .infobox-close {
+        position: static;
+        float: right;
+    }
+    .MicrosoftMap .Infobox .infobox-body {
+        height: 100%;
+    }
+    .MicrosoftMap .Infobox .infobox-info {
+        height: 100%;
+        box-sizing: border-box;
+    }
+    @import "variants/map/*";
+}

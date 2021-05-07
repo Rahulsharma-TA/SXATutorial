@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/* breakpoints */
+.tag-list {
+  padding: 15px 15px 15px 15px;
+}
+
+.tag-list > .component-content {
+  background-color: #f7f7f7;
+  color: #5e5e5e;
+  border-radius: 5px;
+  padding: 0 5px 5px 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d6d6d6;
+}
+
+.tag-list > .component-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.tag-list > .component-content .tag-links,
+.tag-list > .component-content .tag-text {
+  display: block;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.tag-list span.field-title.tag-links {
+  display: block;
+  float: left;
+  background: #d6d6d6;
+  border-radius: 20px;
+  position: relative;
+  margin-right: 5px;
+  padding: 5px 5px;
+  margin-top: 5px;
+}
+
+.tag-list span.field-title.tag-links > a {
+  color: #5e5e5e;
+  text-decoration: none;
+  padding-left: 20px;
+  position: relative;
+  font-family: "Open Sans", Helvetica, Verdana, Tahoma, sans-serif;
+}
+
+.tag-list span.field-title.tag-links > a:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  display: block;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.tag-list span.field-title.tag-links > a:hover {
+  background-color: #d6d6d6;
+}
+
+.tag-list span.field-title.tag-links > a:hover:after {
+  border-left: 10px solid #d6d6d6;
+}
+
+.tag-list span.field-title.tag-text {
+  color: #5e5e5e;
+  position: relative;
+  border-bottom: 1px solid transparent;
+  display: block;
+  float: left;
+  padding-left: 20px;
+}
+
+.tag-list span.field-title.tag-text:hover {
+  cursor: pointer;
+  color: #5e5e5e;
+  border-bottom: 1px solid #cccccc;
+  text-decoration: none;
+}
+
+.tag-list span.field-title.tag-text:before {
+  content: "";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0;
+}

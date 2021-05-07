@@ -1,0 +1,209 @@
+@charset "UTF-8";
+/* breakpoints */
+.playlist {
+  background-color: #cccccc;
+  padding: 5px;
+}
+
+.playlist .scEmptyImage {
+  display: none;
+}
+
+.playlist > .component-content > h1,
+.playlist > .component-content > h2,
+.playlist > .component-content > h3,
+.playlist > .component-content > h4,
+.playlist > .component-content > h5,
+.playlist > .component-content > h6 {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #b3b3b3;
+  font-size: 12px;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  font-weight: 600;
+}
+
+.playlist > .component-content .playlist-items .playlist-item {
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.playlist > .component-content .playlist-items .playlist-item.active {
+  background-color: #cccccc;
+}
+
+.playlist > .component-content .playlist-items .playlist-item.active .field-moviecaption a {
+  color: #5e5e5e;
+}
+
+.playlist > .component-content .playlist-items .playlist-item .playlist-section {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  cursor: pointer;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.playlist > .component-content .playlist-items .playlist-item .playlist-section > .scEmptyPlaceholder {
+  -webkit-flex-basis: 100%;
+  flex-basis: 100%;
+}
+
+.playlist > .component-content .playlist-items .playlist-item .playlist-section > div {
+  -webkit-order: 1;
+  order: 1;
+}
+
+.playlist > .component-content .playlist-items .playlist-item .playlist-section .field-moviecaption a,
+.playlist > .component-content .playlist-items .playlist-item .playlist-section .field-moviecaption a:hover,
+.playlist > .component-content .playlist-items .playlist-item .playlist-section .field-moviecaption .scWebEditInput {
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+.playlist > .component-content .playlist-items .playlist-item .playlist-section .field-moviethumbnail {
+  padding: 5px;
+}
+
+.playlist > .component-content .playlist-items .playlist-item .playlist-section .field-moviethumbnail a {
+  display: none;
+  text-align: center;
+}
+
+.playlist > .component-content .playlist-items .playlist-item .playlist-section .field-moviethumbnail a img {
+  width: 100%;
+  height: auto;
+}
+
+.playlist > .component-content .playlist-items .playlist-item .playlist-section .field-moviecaption > a {
+  padding: 15px 10px;
+  display: block;
+  color: #5e5e5e;
+  font-size: 12px;
+}
+
+.playlist > .component-content .playlist-nav {
+  padding: 5px;
+  text-align: center;
+}
+
+.playlist > .component-content .playlist-nav a {
+  text-indent: -9999px;
+  display: block;
+  height: 100%;
+}
+
+.playlist > .component-content .playlist-nav .playlist-prev,
+.playlist > .component-content .playlist-nav .playlist-next {
+  height: 17px;
+  width: 14px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.playlist > .component-content .playlist-nav .playlist-next a,
+.playlist > .component-content .playlist-nav .playlist-prev a {
+  position: relative;
+}
+
+.playlist > .component-content .playlist-nav .playlist-next a:before,
+.playlist > .component-content .playlist-nav .playlist-prev a:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-indent: 0;
+}
+
+.playlist > .component-content .playlist-nav .playlist-next a:hover,
+.playlist > .component-content .playlist-nav .playlist-prev a:hover {
+  color: #5e5e5e;
+}
+
+.playlist > .component-content .playlist-nav .playlist-prev a:hover {
+  text-decoration: none;
+}
+
+.playlist > .component-content .playlist-nav .playlist-prev a:before {
+  content: "";
+}
+
+.playlist > .component-content .playlist-nav .playlist-next a:hover {
+  text-decoration: none;
+}
+
+.playlist > .component-content .playlist-nav .playlist-next a:before {
+  content: "";
+}
+
+.video-playlist.show {
+  display: block;
+}
+
+.on-page-editor .video-playlist {
+  display: block;
+}
+
+/* breakpoints */
+.playlist.playlist-horizontal {
+  position: relative;
+}
+
+.playlist.playlist-horizontal .playlist-items {
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  width: 100%;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.playlist.playlist-horizontal .playlist-items .playlist-item .playlist-section > div {
+  width: 100%;
+}
+
+.playlist.playlist-horizontal .playlist-items .playlist-item .playlist-section {
+  display: block;
+}
+
+.playlist.playlist-horizontal .playlist-items .playlist-item .field-moviecaption {
+  text-align: center;
+}
+
+.playlist.playlist-horizontal .playlist-prev,
+.playlist.playlist-horizontal .playlist-next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.playlist.playlist-horizontal .playlist-prev {
+  left: 15px;
+}
+
+.playlist.playlist-horizontal .playlist-next {
+  right: 15px;
+}
+
+.playlist {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d6d6d6;
+}
+
+.playlist .playlist-item {
+  background: #cccccc;
+}

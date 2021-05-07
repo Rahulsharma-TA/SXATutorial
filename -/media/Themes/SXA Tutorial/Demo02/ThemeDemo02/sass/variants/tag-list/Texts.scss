@@ -1,0 +1,24 @@
+span.field-title {
+    &.tag-text {
+        color: $tag-list-color;
+        position: relative;
+        border-bottom: 1px solid transparent;
+        display: block;
+        float: left;
+        padding-left: 20px;
+        &:hover {
+            cursor: pointer;
+            color: $tag-list-color;
+            border-bottom: 1px solid $tag-list-item-border;
+            text-decoration: none;
+        }
+        &:before {
+            content: $fa-var-tag;
+            @include fa-icon();
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+        }
+    }
+}

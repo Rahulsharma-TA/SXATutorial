@@ -1,0 +1,25 @@
+/* breakpoints */
+.divider {
+  width: 100%;
+}
+
+.divider hr {
+  margin: 5px 0;
+  border: 0;
+  height: 0;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #cccccc;
+}
+
+.white-space-divider hr {
+  border: none;
+}
+
+.white-space-divider hr {
+  border: none;
+}
+
+.white-space-divider hr {
+  border: none;
+}

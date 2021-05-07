@@ -1,0 +1,23 @@
+@import "abstracts/mixins";
+@import "abstracts/vars";
+@import "base/fontawesome/font-awesome-mix-var";
+.tag-list {
+    @include basic-padding();
+    > .component-content {
+        @include basic-styles($tag-list-bg, $tag-list-color);
+        @include basic-padding(
+            0 $default-padding $default-padding $default-padding
+        );
+        @include basic-border(all, $tag-list-border);
+        @include clearfix();
+        .tag-links,
+        .tag-text {
+            display: block;
+            margin-right: $default-padding;
+            margin-top: $default-padding;
+            a {
+            }
+        }
+    }
+    @import "variants/tag-list/*";
+}

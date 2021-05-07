@@ -1,0 +1,131 @@
+@import "abstracts/mixins";
+@import "abstracts/vars";
+@import "base/fontawesome/font-awesome-mix-var";
+%eventWrapper {
+    @include clearfix();
+    @include basic-styles($event-list-bg, $event-list-color);
+    @include basic-border(all, $event-list-border);
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.event-list {
+    @import "base/richtext/*";
+    @include basic-padding();
+    color: $event-list-item-color;
+    .component-content {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            @include basic-border(bottom, $event-list-title-border);
+            font-size: $font-size-x-small;
+            color: $event-list-title-color;
+        }
+        ul {
+            margin-left: 0;
+            margin-top: 0;
+            padding-top: 0;
+            li.event {
+                @include basic-border(all, $event-list-item-border);
+                @extend %eventWrapper;
+                box-sizing: border-box;
+                position: relative;
+                padding: $default-padding;
+                margin: $default-padding 0 0 0;
+                background-color: $event-list-item-bg;
+                .scWebEditInput {
+                    @include basic-font();
+                }
+                >.scLooseFrameZone {
+                    @extend %eventWrapper;
+                    border-width: 0;
+                    >.scEmptyPlaceholder {
+                        flex-basis: 100%;
+                    }
+                }
+                &.even {}
+                &.odd {}
+                &.first {}
+                &.last {}
+                .event-list-time {
+                    order: 2;
+                    flex-grow: 1;
+                    font-weight: normal;
+                    min-width: 115px;
+                    width: 100%;
+                    padding: $default-padding 0;
+                    .scWebEditInput {
+                        display: inline;
+                    }
+                    .field-event-start {
+                        span {}
+                    }
+                    .field-event-end {
+                        span {}
+                    }
+                }
+                .event-list-info {
+                    order: 1;
+                    flex-grow: 2;
+                    width: 100%;
+                    margin-bottom: 5px;
+                    @include basic-border(bottom, $event-list-item-border);
+                    .event-list-name {
+                        font-size: $font-size-x-small;
+                        padding-bottom: $default-padding;
+                        font-weight: bold;
+                        a {}
+                    }
+                    .event-list-description {
+                        padding-bottom: $default-padding;
+                        font-size: $font-size-x-small;
+                    }
+                }
+                .event-list-place,
+                .event-list-link {
+                    padding-left: 30px;
+                    position: relative;
+                    &:before {
+                        @include fa-icon();
+                        transform: translate(0, -50%);
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        font-size: 16px;
+                    }
+                }
+                .event-list-place {
+                    order: 3;
+                    width: 100%;
+                    margin-top: 3px;
+                    &:before {
+                        content: $fa-var-map-marker;
+                        left: 2px;
+                    }
+                }
+                .event-list-link {
+                    order: 5;
+                    width: 100%;
+                    margin-top: 3px;
+                    a {
+                        font-size: $font-size-x-small;
+                        color: $event-list-item-color;
+                        text-decoration: none;
+                        &:hover {
+                            color: $event-list-item-color-active;
+                            text-decoration: none;
+                        }
+                    }
+                    &:before {
+                        content: $fa-var-calendar-o;
+                    }
+                }
+            }
+        }
+    }
+}

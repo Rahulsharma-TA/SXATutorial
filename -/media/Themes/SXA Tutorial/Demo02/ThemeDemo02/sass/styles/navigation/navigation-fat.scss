@@ -1,0 +1,53 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+@import "../../base/fontawesome/font-awesome-mix-var";
+.navigation.navigation-fat {
+    background: $nav-bg;
+    @include basic-border();
+    @include basic-padding();
+    a {
+        text-decoration: none;
+    }
+    nav > ul {
+        list-style: none;
+        padding: 10px 0;
+        overflow: hidden;
+    }
+    .rel-level1 {
+        margin: $small-margin;
+        padding: 0;
+        display: inline-block;
+        vertical-align: top;
+        &.submenu ul a {
+            position: relative;
+            &:before {
+                @include fa-icon();
+                transform: translateY(-50%);
+                position: absolute;
+                content: $fa-var-chevron-right;
+                top: 50%;
+                left: -9px;
+                font-size: 10px;
+            }
+        }
+        > .navigation-title > a {
+            @include basic-border(top, $nav-border-root, 4px);
+            border-bottom: 0;
+            background: $nav-bg-root;
+            padding: $default-padding;
+            display: block;
+            width: auto;
+            background: $nav-bg-submenu-third;
+            &:hover {
+                border-color: $nav-border-root-active;
+            }
+        }
+        > ul {
+            padding: 0;
+        }
+    }
+    .rel-level2 {
+        padding-left: $small-margin;
+        display: block;
+    }
+}

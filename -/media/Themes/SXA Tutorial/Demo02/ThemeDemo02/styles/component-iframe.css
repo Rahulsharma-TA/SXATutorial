@@ -1,0 +1,19 @@
+/* breakpoints */
+.iframe {
+  padding: 15px 15px 15px 15px;
+  position: relative;
+}
+
+.iframe:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("../images/iframe") #e3e3e3 center center no-repeat;
+}
+
+.iframe iframe {
+  width: 100%;
+}

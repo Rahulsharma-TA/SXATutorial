@@ -1,0 +1,30 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+.content,
+.rich-text {
+    @include basic-padding();
+    background: $rich-content-bg;
+    color: $text-basic;
+    line-height: 1.5;
+    font-size: 12px;
+    overflow: hidden;
+    * {
+        max-width: 100%;
+    }
+    @import "base/richtext/*";
+}
+
+.content {
+    @import "variants/page-content/*";
+}
+
+@import "styles/rich-text/*";
+//Wireframe styles
+.content,
+.rich-text {
+    @include basic-border();
+}
+
+.rich-text {
+    border: none
+}

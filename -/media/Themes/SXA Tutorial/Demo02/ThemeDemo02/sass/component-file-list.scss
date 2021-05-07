@@ -1,0 +1,90 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+.file-list {
+    font-size: $font-size-x-small;
+    @include basic-padding();
+    .component-content {
+        @include basic-border(all, $file-list-border);
+        @include basic-styles($file-list-bg, $file-list-color);
+        @include basic-padding();
+        >h1,
+        >h2,
+        >h3,
+        >h4,
+        >h5,
+        >h6 {
+            @include basic-border(bottom, $file-list-title-border);
+            font-weight: 500;
+            padding-bottom: $default-padding;
+            font-size: $font-size-small;
+            color: $file-list-title-color;
+        }
+        ul {
+            .list-item {
+                margin: 0 0 5px 0;
+                background: $file-list-item-bg;
+                @include basic-border(bottom, $file-list-item-borer);
+                * {
+                    color: $file-list-item-color;
+                }
+                >.scEnabledChrome {
+                    width: 100%;
+                    .scEmptyPlaceholder {
+                        width: 100%;
+                        margin-left: 0;
+                    }
+                }
+                >*,
+                >.scEnabledChrome>* {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                &:last-child {
+                    border-bottom-color: transparent;
+                }
+                .field-linktext,
+                .field-description,
+                .field-customimage,
+                .field-size {
+                    color: $file-list-item-color;
+                    font-size: $file-list-fs-item;
+                }
+                .field-filetypeicon {
+                    span {
+                        display: block;
+                        height: 17px;
+                        &:before {
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .field-title {
+                    color: $file-list-item-title-color;
+                    font-weight: 600;
+                }
+                .field-updated {
+                    text-align: right;
+                    @include basic-padding(0 $default-padding);
+                    color: $file-list-item-update-color;
+                    .scWebEditInput,
+                    span {
+                        color: $file-list-item-update-color;
+                    }
+                }
+                .field-linktext {
+                    a {
+                        &:hover {
+                            color: $file-list-item-color-active;
+                            font-size: $font-size-x-small;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @import "base/richtext/richtext-files-icons";
+    @import "variants/file-list/*";
+}
+
+@import "styles/file-list/*";

@@ -1,0 +1,51 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+@import "../../base/fontawesome/font-awesome-mix-var";
+.variant-selector {
+    @include basic-padding();
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    .component-content {
+        >div {
+            height: 20px;
+            width: 20px;
+            display: inline-block;
+            margin: 2px;
+            cursor: Pointer;
+        }
+    }
+    .variant-option {
+        @include fa-icon();
+        color: $serach-selector-variant-color;
+        &:before {
+            content: $fa-var-th;
+            display: block;
+            height: 100%;
+            font-size: 20px;
+            width: 100%;
+            text-align: center;
+        }
+        &.active-variant {
+            color: $serach-selector-variant-color-active;
+        }
+        &.horizontal {
+            @include fa-icon();
+            &:before {
+                content: $fa-var-th-large;
+            }
+            &.active-variant {
+                color: $serach-selector-variant-color-active;
+            }
+        }
+        &.vertical {
+            @include fa-icon();
+            &:before {
+                content: $fa-var-bars;
+            }
+            &.active-variant {
+                color: $serach-selector-variant-color-active;
+            }
+        }
+    }
+}

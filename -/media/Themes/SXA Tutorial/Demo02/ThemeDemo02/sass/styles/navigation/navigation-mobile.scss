@@ -1,0 +1,101 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+@import "../../base/fontawesome/font-awesome-mix-var";
+.navigation.navigation-mobile {
+    padding-left: 0;
+    padding-right: 0;
+    ul {
+        padding-left: 0;
+    }
+    .submenu {
+        >.navigation-title {
+            position: relative;
+            &:before {
+                @include fa-icon();
+                content: $fa-var-chevron-down;
+                display: block;
+                position: absolute;
+                right: 10px;
+                font-size: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    .rel-level1 {
+        cursor: pointer;
+        margin: 0;
+        background: $nav-bg-root;
+        &.active {
+            background: $nav-bg-root-active;
+        }
+        >ul {
+            li {
+                position: relative;
+                color: $nav-color-root;
+                padding-left: 0;
+            }
+            display: none;
+            background: $nav-bg-submenu;
+        }
+        &.submenu {
+            &.active {
+                >.navigation-title:before {
+                    transform: rotate(180deg);
+                    transition: 0.6s;
+                    transform-style: preserve-3d;
+                }
+                >ul {
+                    display: block;
+                }
+            }
+            >.navigation-title {
+                position: relative;
+                &:before {
+                    @include fa-icon();
+                    content: $fa-var-chevron-down;
+                    display: block;
+                    position: absolute;
+                    right: 10px;
+                    font-size: 10px;
+                    top: 20px;
+                    transform: translateY(-50%);
+                    transform: rotate(0);
+                    transition: 0.6s;
+                    transform-style: preserve-3d;
+                    color: $nav-color-root;
+                }
+            }
+        }
+        >.navigation-title {
+            margin: 0;
+            a {
+                border-bottom-width: 0;
+            }
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+        .navigation-title {
+            padding: $default-padding;
+            >a {
+                text-decoration: none;
+                color: $nav-color-root;
+                padding: 0;
+                display: inline;
+            }
+        }
+    }
+    .rel-level2 {
+        display: list-item;
+        .navigation-title>a {
+            font-weight: 500;
+        }
+        &.active {
+            background-color: $nav-bg-submenu-active;
+        }
+        ul {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+@import "base/fontawesome/font-awesome-mix-var";
+.tag-cloud {
+    @include basic-padding();
+    .component-content {
+        text-align: justify;
+        @include basic-styles($tag-cloud-bg, $tag-cloud-color);
+        @include basic-padding( 0 $default-padding $default-padding $default-padding);
+        @include basic-border(all, $tag-cloud-border);
+        @include clearfix();
+        .tag-cloud-item {
+            display: block;
+            margin-right: $default-padding;
+            margin-top: $default-padding;
+            float: left;
+        }
+    }
+    @import "variants/tag-cloud/*";
+}

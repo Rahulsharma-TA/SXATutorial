@@ -1,0 +1,38 @@
+@import "../../abstracts/mixins";
+.facet-date-range {
+    @include basic-font();
+    @include basic-padding();
+    @include basic-styles($search-date-filter-bg, $search-date-filter-color, 0);
+    box-sizing: border-box;
+    input[type="text"] {
+        margin-top: $default-padding;
+        width: 100%;
+        color: $search-date-filter-input-color;
+        background-color: $search-date-filter-input-bg;
+        border-color: $search-date-filter-input-border;
+    }
+    .bottom-remove-filter {
+        button {
+            margin-top: $default-padding;
+            color: $search-date-filter-clearbtn-color;
+            background-color: $search-date-filter-clearbtn-bg;
+            border-color: $search-date-filter-clearbtn-border;
+            &:hover {
+                background-color: $search-checklist-clearbtn-bg !important;
+                cursor: pointer;
+            }
+        }
+    }
+    .facet-heading {
+        padding-bottom: 0;
+    }
+    .bottom-remove-filter,
+    .bottom-filter-button {
+        width: 100%;
+        [type="button"] {
+            width: 100%;
+        }
+    }
+}
+
+@import "../reset/ui-datepicker";

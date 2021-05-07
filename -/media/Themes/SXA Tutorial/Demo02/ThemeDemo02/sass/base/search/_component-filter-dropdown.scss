@@ -1,0 +1,39 @@
+.facet-dropdown {
+    @include basic-font();
+    @include basic-padding();
+    @include basic-styles(
+        $search-dropdown-bg !important,
+        $search-dropdown-color,
+        0
+    );
+    width: 100%;
+    select {
+        @include basic-border(all, $search-dropdown-select-border);
+        min-width: 100%;
+        box-sizing: border-box;
+        display: inline-block;
+        vertical-align: middle;
+        box-shadow: none;
+        transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+        position: relative;
+        height: auto;
+        padding: 10px 15px;
+        font-size: $font-size-x-small;
+        background-color: $search-dropdown-select-bg;
+        border-radius: 4px;
+    }
+    .bottom-remove-filter {
+        button,
+        input[type="button"] {
+            width: 100%;
+            margin-top: $default-padding;
+            color: $search-dropdown-clearbtn-color;
+            background-color: $search-dropdown-clearbtn-bg;
+            border-color: $search-dropdown-clearbtn-border;
+            &:hover {
+                background-color: $search-dropdown-clearbtn-bg !important;
+                cursor: pointer;
+            }
+        }
+    }
+}

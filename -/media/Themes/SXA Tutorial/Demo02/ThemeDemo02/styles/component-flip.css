@@ -1,0 +1,404 @@
+/* breakpoints */
+.on-page-editor .flipsides {
+  height: auto;
+}
+
+.on-page-editor .flipsides .Side0,
+.on-page-editor .flipsides .Side1 {
+  margin-bottom: 10px;
+}
+
+.flip {
+  background: transparent;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.flip.active > .component-content .flipsides .Side0 {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-animation: slide0hide 1s ease-in 1s forwards;
+  animation: slide0hide 1s ease-in 1s forwards;
+}
+
+.flip.active > .component-content .flipsides .Side1 {
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+  -webkit-animation: slide1show 0s ease-in 1s forwards;
+  animation: slide1show 0s ease-in 1s forwards;
+}
+
+.flip > .component-content .flipsides {
+  position: relative;
+  word-wrap: break-word;
+}
+
+.flip > .component-content .flipsides .Side1,
+.flip > .component-content .flipsides .Side0,
+.flip > .component-content .flipsides .Side0_EDIT,
+.flip > .component-content .flipsides .Side1_EDIT {
+  padding: 15px 15px 15px 15px;
+  width: 100%;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.flip > .component-content .flipsides .Side1:after,
+.flip > .component-content .flipsides .Side0:after,
+.flip > .component-content .flipsides .Side0_EDIT:after,
+.flip > .component-content .flipsides .Side1_EDIT:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.flip > .component-content .flipsides .Side1 .slide-heading,
+.flip > .component-content .flipsides .Side0 .slide-heading,
+.flip > .component-content .flipsides .Side0_EDIT .slide-heading,
+.flip > .component-content .flipsides .Side1_EDIT .slide-heading {
+  font-weight: 600;
+}
+
+.flip > .component-content .flipsides .Side1 .slide-content,
+.flip > .component-content .flipsides .Side0 .slide-content,
+.flip > .component-content .flipsides .Side0_EDIT .slide-content,
+.flip > .component-content .flipsides .Side1_EDIT .slide-content {
+  margin-top: 20px;
+}
+
+.flip > .component-content .flipsides .Side1 .slide-heading,
+.flip > .component-content .flipsides .Side1 .slide-content,
+.flip > .component-content .flipsides .Side0 .slide-heading,
+.flip > .component-content .flipsides .Side0 .slide-content,
+.flip > .component-content .flipsides .Side0_EDIT .slide-heading,
+.flip > .component-content .flipsides .Side0_EDIT .slide-content,
+.flip > .component-content .flipsides .Side1_EDIT .slide-heading,
+.flip > .component-content .flipsides .Side1_EDIT .slide-content {
+  color: #5e5e5e;
+}
+
+.flip > .component-content .flipsides .Side1 .slide-heading:after,
+.flip > .component-content .flipsides .Side1 .slide-content:after,
+.flip > .component-content .flipsides .Side0 .slide-heading:after,
+.flip > .component-content .flipsides .Side0 .slide-content:after,
+.flip > .component-content .flipsides .Side0_EDIT .slide-heading:after,
+.flip > .component-content .flipsides .Side0_EDIT .slide-content:after,
+.flip > .component-content .flipsides .Side1_EDIT .slide-heading:after,
+.flip > .component-content .flipsides .Side1_EDIT .slide-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.flip > .component-content .flipsides .Side1,
+.flip > .component-content .flipsides .Side0 {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d6d6d6;
+  box-sizing: border-box;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  cursor: pointer;
+  width: 100%;
+}
+
+.flip > .component-content .flipsides .Side1 .slide-heading:after,
+.flip > .component-content .flipsides .Side1 .slide-content:after,
+.flip > .component-content .flipsides .Side0 .slide-heading:after,
+.flip > .component-content .flipsides .Side0 .slide-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.flip > .component-content .flipsides .Side0,
+.flip > .component-content .flipsides .Side0_EDIT {
+  background: #f7f7f7;
+}
+
+.flip > .component-content .flipsides .Side1,
+.flip > .component-content .flipsides .Side1_EDIT {
+  background: #e3e3e3;
+}
+
+.flip > .component-content .flipsides .Side1_EDIT {
+  margin-top: 5px;
+}
+
+.flip > .component-content .flipsides .Side1 {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-animation: slide0hide 1s ease-in 1s forwards;
+  animation: slide0hide 1s ease-in 1s forwards;
+}
+
+.flip.flip-fade .Side0, .flip.flip-fade .Side1 {
+  transition-property: opacity;
+}
+
+.flip.flip-fade .Side1 {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  opacity: 0;
+}
+
+.flip.flip-fade.active .Side0 {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  opacity: 0;
+}
+
+.flip.flip-fade.active .Side1 {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  opacity: 1;
+}
+
+.flip.flip-fade .Side0, .flip.flip-fade .Side1 {
+  transition-property: opacity;
+}
+
+.flip.flip-fade .Side1 {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  opacity: 0;
+}
+
+.flip.flip-fade.active .Side0 {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  opacity: 0;
+}
+
+.flip.flip-fade.active .Side1 {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  opacity: 1;
+}
+
+.flip.flip-fade .Side0, .flip.flip-fade .Side1 {
+  transition-property: opacity;
+}
+
+.flip.flip-fade .Side1 {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  opacity: 0;
+}
+
+.flip.flip-fade.active .Side0 {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  opacity: 0;
+}
+
+.flip.flip-fade.active .Side1 {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  opacity: 1;
+}
+
+.flip.flip-slide-top .Side0, .flip.flip-slide-top .Side1 {
+  transition-property: height, visibility, padding-top;
+  transition-duration: 1s, 1s, 1s;
+  transition-timing-function: linear, linear, linear;
+  box-sizing: border-box;
+}
+
+.flip.flip-slide-top .Side1 {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  overflow: hidden;
+  height: 0;
+  visibility: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.flip.flip-slide-top .Side1 .slide-heading {
+  margin-top: 16px;
+}
+
+.flip.flip-slide-top.active .Side0 {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+.flip.flip-slide-top.active .Side1 {
+  height: 100%;
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  visibility: visible;
+  padding-top: 0;
+  padding-bottom: 10px;
+}
+
+.flip.flip-slide-top .Side0, .flip.flip-slide-top .Side1 {
+  transition-property: height, visibility, padding-top;
+  transition-duration: 1s, 1s, 1s;
+  transition-timing-function: linear, linear, linear;
+  box-sizing: border-box;
+}
+
+.flip.flip-slide-top .Side1 {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  overflow: hidden;
+  height: 0;
+  visibility: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.flip.flip-slide-top .Side1 .slide-heading {
+  margin-top: 16px;
+}
+
+.flip.flip-slide-top.active .Side0 {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+.flip.flip-slide-top.active .Side1 {
+  height: 100%;
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  visibility: visible;
+  padding-top: 0;
+  padding-bottom: 10px;
+}
+
+.flip.flip-slide-top .Side0, .flip.flip-slide-top .Side1 {
+  transition-property: height, visibility, padding-top;
+  transition-duration: 1s, 1s, 1s;
+  transition-timing-function: linear, linear, linear;
+  box-sizing: border-box;
+}
+
+.flip.flip-slide-top .Side1 {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  overflow: hidden;
+  height: 0;
+  visibility: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.flip.flip-slide-top .Side1 .slide-heading {
+  margin-top: 16px;
+}
+
+.flip.flip-slide-top.active .Side0 {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+.flip.flip-slide-top.active .Side1 {
+  height: 100%;
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  visibility: visible;
+  padding-top: 0;
+  padding-bottom: 10px;
+}
+
+.flip.flip-vertical .Side1 {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+
+.flip.flip-vertical.active .Side0 {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+
+.flip.flip-vertical.active .Side1 {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform: rotateX(360deg);
+  transform: rotateX(360deg);
+}
+
+.flip.flip-vertical .Side1 {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+
+.flip.flip-vertical.active .Side0 {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+
+.flip.flip-vertical.active .Side1 {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform: rotateX(360deg);
+  transform: rotateX(360deg);
+}
+
+.flip.flip-vertical .Side1 {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+
+.flip.flip-vertical.active .Side0 {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+
+.flip.flip-vertical.active .Side1 {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform: rotateX(360deg);
+  transform: rotateX(360deg);
+}
+
+@-webkit-keyframes slide0hide {
+  to {
+    visibility: hidden;
+  }
+}
+
+@keyframes slide0hide {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes slide1show {
+  to {
+    visibility: visible;
+  }
+}
+
+@keyframes slide1show {
+  to {
+    visibility: visible;
+  }
+}

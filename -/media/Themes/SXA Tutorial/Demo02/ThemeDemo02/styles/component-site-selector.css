@@ -1,0 +1,201 @@
+/* breakpoints */
+.market-selector {
+  /* breakpoints */
+  padding: 5px 5px 5px 5px;
+  font-family: "Open Sans", Helvetica, Verdana, Tahoma, sans-serif;
+}
+
+.market-selector label {
+  background: transparent;
+  color: #5e5e5e;
+}
+
+.market-selector button, .market-selector input[type="button"] {
+  padding: 12px 50px;
+}
+
+.market-selector input {
+  padding: 12px 10px;
+}
+
+.market-selector input, .market-selector button {
+  border-radius: 5px;
+  display: inline-block;
+  box-sizing: border-box;
+  background: #f7f7f7;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d6d6d6;
+  line-height: 14px;
+  color: #5e5e5e;
+  font-weight: normal;
+  clear: both;
+  height: auto;
+  font-size: 12px;
+}
+
+.market-selector input:focus, .market-selector button:focus {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d6d6d6;
+}
+
+.market-selector input::-moz-focus-inner, .market-selector button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.market-selector input[type="text"] {
+  font-size: 12px;
+}
+
+.market-selector textarea, .market-selector select {
+  box-shadow: none;
+  color: #5e5e5e;
+  width: 100%;
+}
+
+.market-selector select {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cccccc;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  box-sizing: border-box;
+  outline: none;
+  cursor: pointer;
+}
+
+.market-selector input[type="checkbox"] {
+  position: absolute;
+  left: -99999px;
+}
+
+.market-selector input[type="checkbox"]:checked {
+  padding: 10px;
+}
+
+.market-selector input[type="checkbox"]:checked ~ label:before {
+  background-color: #fff;
+}
+
+.market-selector input[type="checkbox"]:checked ~ label:after {
+  background: url("../images/checked.png") 0 0 no-repeat;
+  background-position: -2px -2px;
+}
+
+.market-selector input[type="checkbox"] ~ label {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.market-selector input[type="checkbox"] ~ label:after, .market-selector input[type="checkbox"] ~ label:before {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d6d6d6;
+  display: inline-block;
+  background-color: #fff;
+  content: " ";
+  position: absolute;
+  z-index: 1;
+  width: 15px;
+  height: 15px;
+  left: -20px;
+  top: 0;
+  margin-right: 3px;
+}
+
+.market-selector input[type="file"] {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d6d6d6;
+  width: 95%;
+  font-weight: bold;
+  padding: 2px;
+}
+
+.market-selector input[type="file"] + span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.market-selector input[type="file"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.market-selector input[type="radio"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.market-selector input[type="radio"] + label:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  left: 0;
+}
+
+.market-selector input[type="radio"] + label:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  display: block;
+  width: 16px;
+  height: 15px;
+  background: url("../images/radiobox.png");
+  left: 0;
+}
+
+.market-selector input[type="radio"]:checked + label:after {
+  background-position: -16px 0;
+}
+
+.market-selector input[type="radio"] + label {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-left: 18px;
+  margin-left: 5px;
+  position: relative;
+}
+
+.market-selector .sitecore-form input[type="checkbox"] {
+  position: static;
+  left: 0;
+}
+
+.market-selector .sitecore-form input[type="radio"] {
+  position: static;
+  left: 0;
+}
+
+.market-selector .market-selector-inner .market-selector-content .styled-select form select {
+  background-color: #f7f7f7;
+  color: #5e5e5e;
+  border-radius: 5px;
+  padding: 10px 10px 10px 10px;
+  height: auto;
+  font-size: 12px;
+  border-color: #d6d6d6;
+  font-family: inherit;
+}
+
+.market-selector .market-selector-inner .market-selector-content .styled-select form select option {
+  font-family: inherit;
+  padding: 5px;
+}

@@ -1,0 +1,146 @@
+@import "../../abstracts/mixins";
+@import "../../abstracts/vars";
+label {
+    background: transparent;
+    color: $text-basic;
+}
+button, input[type="button"] {
+    padding: 12px 50px;
+}
+input {
+    padding: 12px 10px;
+}
+input, button {
+    border-radius: 5px;
+    display: inline-block;
+    box-sizing: border-box;
+    background: $bg-basic-color;
+    @include basic-border();
+    line-height: 14px;
+    color: $text-basic;
+    font-weight: normal;
+    clear: both;
+    height: auto;
+    font-size: $font-size-x-small;
+    &:focus {
+        @include basic-border();
+    }
+}
+input::-moz-focus-inner, button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+input[type="text"] {
+    font-size: $font-size-x-small;
+}
+textarea, select {
+    box-shadow: none;
+    color: $text-basic;
+    width: 100%;
+}
+select {
+    @include basic-border(all, $border-gray);
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    cursor: pointer;
+}
+input[type="checkbox"] {
+    position: absolute;
+    left: -99999px;
+    &:checked {
+        padding: 10px;
+        &~label:before {
+            background-color: #fff;
+        }
+        &~label:after {
+            background: url("../images/checked.png") 0 0 no-repeat;
+            background-position: -2px -2px;
+        }
+    }
+    &~label {
+        user-select: none;
+        position: relative;
+        margin-left: 20px;
+        cursor: pointer;
+        &:after, &:before {
+            @include basic-border();
+            display: inline-block;
+            background-color: #fff;
+            content: " ";
+            position: absolute;
+            z-index: 1;
+            width: 15px;
+            height: 15px;
+            left: -20px;
+            top: 0;
+            margin-right: 3px;
+        }
+    }
+}
+input[type="file"] {
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    @include basic-border();
+    width: 95%;
+    font-weight: bold;
+    padding: 2px;
+    &+span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+input[type="file"] {
+    appearance: none;
+}
+input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+    &+label:before {
+        content: "";
+        position: absolute;
+        top: 2px;
+        display: block;
+        width: 16px;
+        height: 16px;
+        background-color: #fff;
+        left: 0;
+    }
+    &+label:after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        display: block;
+        width: 16px;
+        height: 15px;
+        background: url("../images/radiobox.png");
+        left: 0;
+    }
+    &:checked+label:after {
+        background-position: -16px 0;
+    }
+    &+label {
+        user-select: none;
+        padding-left: 18px;
+        margin-left: 5px;
+        position: relative;
+    }
+}
+//Fix for Sitecore Forms
+.sitecore-form {
+    input[type="checkbox"] {
+        position: static;
+        left: 0;
+    }
+    input[type="radio"] {
+        position: static;
+        left: 0;
+    }
+}

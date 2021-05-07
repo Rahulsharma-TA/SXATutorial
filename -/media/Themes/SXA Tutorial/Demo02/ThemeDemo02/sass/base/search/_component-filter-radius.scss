@@ -1,0 +1,60 @@
+@import "../../abstracts/vars";
+.radius-filter {
+    @include basic-padding();
+    .radius-button {
+        &.selected {
+            color: $search-filter-radius-active;
+            background: $search-filter-radius-bg;
+        }
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        border-radius: 5px;
+        padding: 5px;
+        @include basic-border(all, $list-pagination-border);
+        li {
+            display: block;
+            position: relative;
+            padding: 5px;
+            cursor: pointer;
+            font-size: $font-size-x-small;
+            &.selected {
+                font-weight: 600;
+            }
+            &:first-child {
+                &:before {
+                    display: none;
+                }
+            }
+            &:before {
+                content: "";
+                position: absolute;
+                display: block;
+                height: 50%;
+                width: 1px;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%); // @include basic-border( left, $search-filter-radius-border, $border-width: 1px);
+            }
+        }
+    }
+    .bottom-remove-filter {
+        margin-top: $default-padding;
+        width: 100%;
+        button,
+        input[type="button"] {
+            width: 100%;
+            color: $search-checklist-btn-color;
+            font-size: $font-size-x-small;
+            background-color: $search-checklist-clearbtn-bg;
+            border-color: $search-checklist-clearbtn-border;
+            color: $search-checklist-clearbtn-color;
+            &:hover {
+                background-color: $search-checklist-clearbtn-bg !important;
+                cursor: pointer;
+            }
+        }
+    }
+}

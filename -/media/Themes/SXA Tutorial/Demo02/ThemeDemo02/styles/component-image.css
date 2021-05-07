@@ -1,0 +1,87 @@
+/* breakpoints */
+.image {
+  padding: 15px 15px 15px 15px;
+}
+
+.image > .component-content {
+  background-color: transparent;
+  color: #5e5e5e;
+  border-radius: 5px;
+  border-transparent-width: 1px;
+  border-transparent-style: solid;
+  border-transparent-color: #d6d6d6;
+}
+
+.image > .component-content a {
+  display: inline-block;
+  max-width: 100%;
+  width: 100%;
+}
+
+.image > .component-content a img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.image > .component-content .image-caption {
+  display: block;
+  font-size: 12px;
+  color: #5e5e5e;
+  padding: 5px 5px 0 0;
+}
+
+.image-default-size img {
+  max-width: none;
+  width: auto !important;
+}
+
+.image-default-size img {
+  max-width: none;
+  width: auto !important;
+}
+
+.image-default-size img {
+  max-width: none;
+  width: auto !important;
+}
+
+.image-full-size img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.image-full-size img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.image-full-size img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.image-left .component-content > div > img {
+  float: left;
+}
+
+.image-left .component-content > div > img {
+  float: left;
+}
+
+.image-left .component-content > div > img {
+  float: left;
+}
+
+.image-right .component-content > div > img {
+  float: right;
+}
+
+.image-right .component-content > div > img {
+  float: right;
+}
+
+.image-right .component-content > div > img {
+  float: right;
+}

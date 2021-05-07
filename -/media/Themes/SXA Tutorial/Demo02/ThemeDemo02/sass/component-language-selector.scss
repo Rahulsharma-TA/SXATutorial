@@ -1,0 +1,92 @@
+@import "abstracts/mixins";
+@import "abstracts/vars";
+@import "base/sprites/sprite-flag";
+@import "base/fontawesome/font-awesome-mix-var";
+.language-selector {
+  @include basic-padding($default-padding);
+  > .component-content {
+    position: relative; //this sprites was compiled by gulp
+    font-size: $font-size-x-small;
+    @include sprites($spritesheet-sprites);
+    @include basic-styles($lang-selector-bg, $lang-selector-color);
+    @include basic-border(all, $lang-selector-border);
+    @include basic-padding($default-inputs-padding);
+    .language-selector-select-item {
+      cursor: pointer;
+      background-color: $site-selector-bg;
+      .language-selector-select-link {
+        padding-left: 25px;
+        font-size: inherit;
+        background-repeat: no-repeat;
+        width: 100%;
+        display: block;
+        position: relative;
+        padding-right: $default-padding;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      &:after {
+        @include fa-icon();
+        content: $fa-var-caret-down;
+        position: absolute;
+        right: 7px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    .language-selector-item-container {
+      padding: 0;
+      position: absolute;
+      top: 95%;
+      min-width: 220px;
+      z-index: 10;
+      background: $site-selector-bg;
+      display: none;
+      left: -1px;
+      right: -1px;
+      @include basic-border(all, $site-selector-border);
+      border-top-color: transparent;
+      border-radius: 0 0 3px 3px;
+      .language-selector-item {
+        padding: $default-padding;
+        cursor: pointer;
+        border-bottom: 1px solid $lang-selector-item-border;
+        background-color: $lang-selector-item-bg;
+        &:hover {
+          background-color: $lang-selector-item-bg-active;
+          border-bottom: 1px solid $lang-selector-item-border-active;
+        }
+        &:first-child {
+          margin-bottom: 0;
+        }
+        a {
+          text-decoration: none;
+          color: $text-basic;
+          font-weight: normal;
+          padding-left: 25px;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+
+    .language-selector-link {
+      padding: 0px 20px 0 30px;
+    }
+  }
+}
+
+//Wireframe styles
+.language-selector {
+  .language-selector-select-item {
+    > a {
+      filter: grayscale(100%);
+    }
+  }
+  .language-selector-item {
+    a {
+      filter: grayscale(100%);
+    }
+  }
+}
+@import "styles/language-selector/*";

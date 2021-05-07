@@ -1,0 +1,58 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+.media-link {
+    @include basic-padding();
+    > .component-content {
+        @include basic-padding();
+        @include basic-styles($media-link-bg, $media-link-color);
+        @include basic-border(all, $media-link-border);
+        .scEmptyPlaceholder {
+            width: 100%;
+            margin-left: 0;
+        }
+        > * {
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+        a {
+            color: $media-link-color;
+            &:hover {
+                color: $media-link-color-active;
+                text-decoration: none;
+            }
+        }
+        .field-filetypeicon,
+        .field-linktext {
+            display: inline-block;
+        }
+        .field-filetypeicon {
+            > a {
+                height: 24px !important;
+                display: block;
+            }
+            span {
+                display: block;
+                height: 24px !important;
+                &:before {
+                    font-size: 18px;
+                }
+            }
+        }
+        .field-linktext {
+            a {
+                font-size: $font-normal;
+            }
+        }
+    }
+    &.position-right {
+        .field-filetypeicon,
+        .field-linktext {
+            float: right;
+        }
+    }
+    @import "variants/media-link/*";
+    @import "base/richtext/richtext-files-icons";
+}
+
+@import "styles/media-link/*";

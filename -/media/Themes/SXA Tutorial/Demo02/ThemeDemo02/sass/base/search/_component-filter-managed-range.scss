@@ -1,0 +1,63 @@
+.facet-managed-range {
+    @include basic-padding();
+    @include basic-styles(
+        $search-managed-range-bg,
+        $search-managed-range-color,
+        0
+    );
+    box-sizing: border-box;
+    .min-range-value,
+    .max-range-value {
+        display: inline-block;
+        vertical-align: middle;
+        float: left;
+        width: 49%;
+        margin-bottom: $default-padding;
+        input[type="text"] {
+            min-width: 100%;
+            width: 100%;
+        }
+    }
+    .min-range-value {
+        float: left;
+    }
+    .max-range-value {
+        float: right;
+    }
+    .bottom-filter-button {
+        clear: both;
+        margin-top: $default-padding;
+        button,
+        input[type="button"] {
+            color: $search-checklist-btn-color;
+            font-size: $font-size-x-small;
+            background-color: $search-checklist-btn-bg;
+            &:hover {
+                background-color: $search-checklist-btn-bg !important;
+                cursor: pointer;
+            }
+        }
+    }
+    .bottom-remove-filter {
+        @include clearfix();
+        button,
+        input[type="button"] {
+            color: $search-checklist-btn-color;
+            font-size: $font-size-x-small;
+            background-color: $search-checklist-clearbtn-bg;
+            border-color: $search-checklist-clearbtn-border;
+            color: $search-checklist-clearbtn-color;
+            &:hover {
+                background-color: $search-checklist-clearbtn-bg !important;
+                cursor: pointer;
+            }
+        }
+    }
+    .bottom-remove-filter,
+    .bottom-filter-button {
+        width: 100%;
+        [type="button"] {
+            width: 100%;
+        }
+    }
+}

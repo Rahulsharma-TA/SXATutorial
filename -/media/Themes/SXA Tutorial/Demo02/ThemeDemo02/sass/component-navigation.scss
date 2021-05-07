@@ -1,0 +1,56 @@
+@import "abstracts/mixins";
+@import "abstracts/vars";
+.navigation {
+    background: $nav-bg;
+    padding-left: 0;
+    padding-right: 0;
+    .level1,
+    .level0 {
+        > .navigation-title > a {
+            font-size: $font-size-x-small;
+            padding-right: $default-padding;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        &:last-child {
+            a {
+                border-bottom-color: transparent;
+            }
+        }
+    }
+    a {
+        color: $nav-color-root;
+        .lt-ie9 &,
+        .lt-ie9 & span {
+            color: $nav-color-root;
+        }
+        &:focus,
+        &:hover {
+            color: $nav-color-root-active;
+        }
+    }
+    li {
+        &.submenu {
+            margin-bottom: 0;
+        }
+        > .navigation-title {
+            > a {
+                padding: $default-padding;
+                display: block;
+                color: $nav-color-root;
+                text-decoration: none;
+                font-size: $font-size-x-small;
+            }
+        }
+        > ul a {
+            font-size: $font-size-x-small;
+        }
+    }
+    .submenu > ul {
+        padding-left: 10px;
+    }
+    @import "variants/navigation/*";
+}
+
+@import "styles/navigation/*";

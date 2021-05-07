@@ -1,0 +1,148 @@
+/* breakpoints */
+.sitecore-form {
+  padding: 15px 15px 15px 15px;
+}
+
+.sitecore-form > .component-content {
+  padding: 15px 15px 15px 15px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  background-color: #f7f7f7;
+  color: #5e5e5e;
+  border-radius: 5px;
+}
+
+.sitecore-form form {
+  font-family: "Open Sans", Helvetica, Verdana, Tahoma, sans-serif;
+  font-size: 12px;
+  color: #5e5e5e;
+}
+
+.sitecore-form form > div {
+  padding: 5px 0 5px 0;
+}
+
+.sitecore-form form > div label {
+  font-family: inherit;
+  padding-right: 5px;
+}
+
+.sitecore-form form > div input {
+  font-family: inherit;
+}
+
+.sitecore-form form > div label + textarea {
+  margin-top: 5px;
+}
+
+.sitecore-form form > div textarea,
+.sitecore-form form > div select {
+  margin-top: 5px;
+}
+
+.sitecore-form form [data-sc-field-name="Password Confirmation"] {
+  margin-right: 5px;
+}
+
+.sitecore-form .form.hints-below .scfSectionContent [class$="UsefulInfo"] {
+  position: static;
+  opacity: 1;
+  max-width: 100%;
+  width: 100%;
+  margin: 5px 0 0 5px;
+}
+
+.sitecore-form .form.hints-below .scfSectionContent [class$="UsefulInfo"] {
+  position: static;
+  opacity: 1;
+  max-width: 100%;
+  width: 100%;
+  margin: 5px 0 0 5px;
+}
+
+.sitecore-form .form.hints-below .scfSectionContent [class$="UsefulInfo"] {
+  position: static;
+  opacity: 1;
+  max-width: 100%;
+  width: 100%;
+  margin: 5px 0 0 5px;
+}
+
+.sitecore-form .form.labels-above label {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.sitecore-form .form.labels-above .scfEmailGeneralPanel, .sitecore-form .form.labels-above .scfMultipleLineGeneralPanel, .sitecore-form .form.labels-above .scfSingleLineGeneralPanel, .sitecore-form .form.labels-above .scfPasswordGeneralPanel, .sitecore-form .form.labels-above .scfNumberGeneralPanel, .sitecore-form .form.labels-above .scfDatePickerGeneralPanel, .sitecore-form .form.labels-above .scfListBoxGeneralPanel, .sitecore-form .form.labels-above .scfDropListGeneralPanel, .sitecore-form .form.labels-above .scfDateGeneralPanel, .sitecore-form .form.labels-above .scfRadioButtonListGeneralPanel, .sitecore-form .form.labels-above .scfCheckBoxListGeneralPanel, .sitecore-form .form.labels-above .scfFileUploadGeneralPanel, .sitecore-form .form.labels-above .scfDateSelectorGeneralPanel, .sitecore-form .form.labels-above .scfCreditCardGeneralPanel, .sitecore-form .form.labels-above .scfConfirmPasswordGeneralPanel, .sitecore-form .form.labels-above .scfCaptchaGeneralPanel, .sitecore-form .form.labels-above .scfTelephoneGeneralPanel, .sitecore-form .form.labels-above .scfSmsTelephoneGeneralPanel {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  width: 93%;
+}
+
+.sitecore-form .form.labels-above .scfSectionContent .scfRequired {
+  margin: 0 5px;
+}
+
+.sitecore-form .form.labels-above .scfMultipleLineGeneralPanel {
+  width: 95%;
+}
+
+.sitecore-form .form.labels-above .scfMultipleLineTextBox {
+  margin: 0 0 0 5px;
+}
+
+.sitecore-form .form.labels-above label {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.sitecore-form .form.labels-above .scfEmailGeneralPanel, .sitecore-form .form.labels-above .scfMultipleLineGeneralPanel, .sitecore-form .form.labels-above .scfSingleLineGeneralPanel, .sitecore-form .form.labels-above .scfPasswordGeneralPanel, .sitecore-form .form.labels-above .scfNumberGeneralPanel, .sitecore-form .form.labels-above .scfDatePickerGeneralPanel, .sitecore-form .form.labels-above .scfListBoxGeneralPanel, .sitecore-form .form.labels-above .scfDropListGeneralPanel, .sitecore-form .form.labels-above .scfDateGeneralPanel, .sitecore-form .form.labels-above .scfRadioButtonListGeneralPanel, .sitecore-form .form.labels-above .scfCheckBoxListGeneralPanel, .sitecore-form .form.labels-above .scfFileUploadGeneralPanel, .sitecore-form .form.labels-above .scfDateSelectorGeneralPanel, .sitecore-form .form.labels-above .scfCreditCardGeneralPanel, .sitecore-form .form.labels-above .scfConfirmPasswordGeneralPanel, .sitecore-form .form.labels-above .scfCaptchaGeneralPanel, .sitecore-form .form.labels-above .scfTelephoneGeneralPanel, .sitecore-form .form.labels-above .scfSmsTelephoneGeneralPanel {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  width: 93%;
+}
+
+.sitecore-form .form.labels-above .scfSectionContent .scfRequired {
+  margin: 0 5px;
+}
+
+.sitecore-form .form.labels-above .scfMultipleLineGeneralPanel {
+  width: 95%;
+}
+
+.sitecore-form .form.labels-above .scfMultipleLineTextBox {
+  margin: 0 0 0 5px;
+}
+
+.sitecore-form .form.labels-above label {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.sitecore-form .form.labels-above .scfEmailGeneralPanel, .sitecore-form .form.labels-above .scfMultipleLineGeneralPanel, .sitecore-form .form.labels-above .scfSingleLineGeneralPanel, .sitecore-form .form.labels-above .scfPasswordGeneralPanel, .sitecore-form .form.labels-above .scfNumberGeneralPanel, .sitecore-form .form.labels-above .scfDatePickerGeneralPanel, .sitecore-form .form.labels-above .scfListBoxGeneralPanel, .sitecore-form .form.labels-above .scfDropListGeneralPanel, .sitecore-form .form.labels-above .scfDateGeneralPanel, .sitecore-form .form.labels-above .scfRadioButtonListGeneralPanel, .sitecore-form .form.labels-above .scfCheckBoxListGeneralPanel, .sitecore-form .form.labels-above .scfFileUploadGeneralPanel, .sitecore-form .form.labels-above .scfDateSelectorGeneralPanel, .sitecore-form .form.labels-above .scfCreditCardGeneralPanel, .sitecore-form .form.labels-above .scfConfirmPasswordGeneralPanel, .sitecore-form .form.labels-above .scfCaptchaGeneralPanel, .sitecore-form .form.labels-above .scfTelephoneGeneralPanel, .sitecore-form .form.labels-above .scfSmsTelephoneGeneralPanel {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  width: 93%;
+}
+
+.sitecore-form .form.labels-above .scfSectionContent .scfRequired {
+  margin: 0 5px;
+}
+
+.sitecore-form .form.labels-above .scfMultipleLineGeneralPanel {
+  width: 95%;
+}
+
+.sitecore-form .form.labels-above .scfMultipleLineTextBox {
+  margin: 0 0 0 5px;
+}

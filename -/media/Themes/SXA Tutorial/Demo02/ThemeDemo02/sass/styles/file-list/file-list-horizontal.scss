@@ -1,0 +1,51 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+.file-list {
+    &.file-list-horizontal {
+        .component-content>ul {
+            display: flex;
+            flex-wrap: wrap;
+            >li {
+                order: 1;
+            }
+        }
+        li {
+            flex-grow: 1;
+            align-self: flex-end;
+            display: inline-block;
+            vertical-align: middle;
+            box-sizing: border-box;
+            width: auto;
+            margin: 0;
+            padding: $default-padding;
+            max-width: 100%;
+            &:last-child {
+                border-bottom-color: $file-list-item-borer;
+            }
+            .field-filetypeicon {
+                margin: $default-padding 0;
+                span {
+                    width: 100%;
+                    &:before {
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+            .field-customimage {
+                img {
+                    max-width: 100%;
+                }
+            }
+            .field-linktext {
+                padding: 0;
+            }
+        }
+        .list-item>*,
+        .list-item>.scEnabledChrome>* {
+            display: block;
+            text-align: center;
+        }
+    }
+}

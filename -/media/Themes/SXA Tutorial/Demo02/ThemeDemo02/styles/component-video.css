@@ -1,0 +1,45 @@
+/* breakpoints */
+.component.video {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.component.video .video-init {
+  margin: 0;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.component.video .mejs-mediaelement:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("../images/video") #e3e3e3 center center no-repeat;
+}
+
+.component.video .mejs-overlay-button {
+  display: none;
+}
+
+.component.video .mejs-layers .mejs-overlay-play {
+  width: 80px !important;
+  height: 80px !important;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.component.video .mejs-iframe-overlay {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}

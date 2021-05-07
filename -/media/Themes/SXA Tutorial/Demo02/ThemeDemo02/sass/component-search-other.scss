@@ -1,0 +1,86 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+.facet-component, .facet-summary {
+    box-sizing: border-box;
+    background: transparent;
+    @import "base/reset/inputs";
+    @include clearfix();
+    .bottom-filter-button {
+        float: right;
+    }
+    .facet-heading {
+        @include basic-border(bottom, $search-checklist-border);
+        padding: 0 0 $default-padding 0;
+        position: relative;
+        .facet-title {
+            display: inline-block;
+            vertical-align: middle;
+            padding-right: 25px;
+            font-weight: 600;
+            color: $search-checklist-title-color;
+            font-size: $font-size-x-small;
+        }
+        .clear-filter {
+            display: block;
+            font-size: $font-size-x-small;
+            text-align: center !important;
+            width: 12px;
+            height: 12px;
+            line-height: 12px;
+            cursor: pointer;
+            position: absolute;
+            color: $search-filter;
+            right: 3px;
+            top: 42%;
+            transform: translateY(-50%);
+            background: $search-btn-bg;
+            &:hover {
+                background: $search-btn-active-bg;
+                border-color: $search-btn-active-border;
+                text-decoration: none;
+                color: $search-filter;
+                &:before {
+                    content: "Clear filter";
+                    display: block;
+                    position: absolute;
+                    right: 20px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    @include basic-border();
+                    background-color: $search-checklist-clearbtn-bg;
+                    width: 90px;
+                    height: 24px;
+                    padding: 6px 0;
+                    box-shadow: 0 0 10px 1px $palette-x-light;;
+                }
+            }
+            &.has-active-facet {
+                background: $search-btn-active-bg;
+                color: $search-filter;
+                &:hover {
+                    background: $search-btn-active-bg;
+                    color: $search-filter;
+                }
+            }
+        }
+    }
+}
+
+@import "base/search/component-filter-checklist";
+@import "base/search/component-facet-summary";
+@import "base/search/component-filter-date";
+@import "base/search/component-filter-dropdown";
+@import "base/search/component-filter-managed-range";
+@import "base/search/component-filter-range-slider";
+@import "base/search/component-filter-radius";
+@import "base/search/component-filter-slider";
+@import "base/search/component-load-more";
+@import "base/search/component-location";
+@import "base/search/component-page-selector";
+@import "base/search/component-page-size";
+@import "base/search/component-results-count";
+@import "base/search/component-results-filter";
+@import "base/search/component-variant-selector";
+@import "base/search/component-search-box";
+@import "base/search/component-sort-results";
+@import "styles/search/*";

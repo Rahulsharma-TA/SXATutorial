@@ -1,0 +1,161 @@
+@import "abstracts/mixins";
+@import "abstracts/vars";
+@import "base/fontawesome/font-awesome-mix-var";
+.on-page-editor {
+    .gallery-inner img {
+        max-width: 100%;
+    }
+}
+
+.gallery {
+    >.component-content {
+        .gallery-inner {
+            .galleria-container.galleria-theme-basic {
+                border-radius: 5px;
+                background: $galleria-container-bg;
+                .galleria-stage {
+                    bottom: 75px;
+                    .galleria-images {
+                        .galleria-image {
+                            .galleria-layer {}
+                            .galleria-frame {}
+                            img {}
+                        }
+                    }
+                    .galleria-loader {
+                        top: 50%;
+                        left: 50%;
+                        height: 1px !important;
+                    }
+                    .galleria-counter {
+                        color: $gallery-counter-color;
+                        @include opensans-font-stack();
+                        .galleria-current {}
+                        .galleria-total {}
+                    }
+                    .galleria-image-nav {
+                        margin-top: 0;
+                        transform: translateY(-50%);
+                        z-index: 999;
+                        height: 30px;
+                        .galleria-image-nav-left,
+                        .galleria-image-nav-right {
+                            top: 50%;
+                            transform: translateY(-50%);
+                            height: 30px;
+                            width: 14px;
+                            @include fa-icon();
+                            font-size: 28px;
+                            color: $gallery-nav;
+                        }
+                        .galleria-image-nav-right {
+                            &:before {
+                                content: $fa-var-chevron-right;
+                            }
+                            &:hover {
+                                color: $gallery-nav-active;
+                            }
+                        }
+                        .galleria-image-nav-left {
+                            &:before {
+                                content: $fa-var-chevron-left;
+                            }
+                            &:hover {
+                                color: $gallery-nav-active;
+                            }
+                        }
+                    }
+                }
+                .galleria-thumbnails-container {
+                    left: 0;
+                    right: 0;
+                    background-color: $galleria-thumbnails-container;
+                    height: 75px;
+                    padding: $default-padding 0;
+                    .galleria-thumb-nav-left,
+                    .galleria-thumb-nav-right {
+                        top: 50%;
+                        height: 7px;
+                        width: 5px;
+                        transform: translateY(-50%);
+                    }
+                    .galleria-thumb-nav-left {
+                        @include fa-icon();
+                        right: auto;
+                        left: 10px;
+                        &.disabled {}
+                        &:before {
+                            content: $fa-var-chevron-left;
+                            font-size: $font-normal;
+                            color: $gallery-nav;
+                            display: block;
+                        }
+                    }
+                    .galleria-thumb-nav-right {
+                        @include fa-icon();
+                        right: 10px;
+                        &.disabled {}
+                        &:before {
+                            content: $fa-var-chevron-right;
+                            font-size: $font-normal;
+                            color: $gallery-nav;
+                            display: block;
+                        }
+                    }
+                    .galleria-thumbnails-list {
+                        .galleria-thumbnails {
+                            margin: 0 auto;
+                            .galleria-image {
+                                border-width: 0;
+                                &.active {}
+                                img {
+                                    border: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                .galleria-info {
+                    .galleria-info-text {
+                        background-color: $gallery-info-bg;
+                        border: 1px solid $gallery-info-border;
+                        .galleria-info-title {
+                            color: $gallery-info-text;
+                            font-size: 12px;
+                            font-weight: bold;
+                            @include opensans-font-stack();
+                        }
+                        .galleria-info-description {
+                            font-size: 12px;
+                            font-style: italic;
+                            @include opensans-font-stack();
+                            color: $gallery-info-text;
+                        }
+                    }
+                    .galleria-info-link {
+                        color: $gallery-nav;
+                        background: none;
+                        @include fa-icon();
+                        font-size: 18px;
+                        &:before {
+                            content: $fa-var-info-circle;
+                        }
+                    }
+                    .galleria-info-close {
+                        width: 13px;
+                        height: 12px;
+                        &:before {
+                            content: $fa-var-close;
+                            @include fa-icon();
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+                }
+                .galleria-tooltip {}
+            }
+        }
+    }
+}
+
+@import "styles/galleria/*";

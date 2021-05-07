@@ -1,0 +1,31 @@
+.sort-results {
+    @import "../reset/inputs";
+    @include basic-padding();
+    .component-content {
+        display: flex;
+        align-items: center;
+        @include basic-font();
+        select {
+            flex: 1;
+            max-width: 100%;
+            width: auto;
+            display: inline-block;
+            min-width: 85px;
+            max-height: 40px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: none;
+            font-family: inherit;
+            color: $search-sort-result-color;
+            font-size: $font-size-x-small;
+            background-color: $search-sort-result-bg;
+            border-color: $search-sort-result-border;
+        }
+        .facet-title {
+            flex: 1;
+            display: inline-block;
+            margin-right: $default-padding;
+            text-align: right;
+        }
+    }
+}

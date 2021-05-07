@@ -1,0 +1,37 @@
+span.field-title {
+    &.tag-links {
+        display: block;
+        float: left;
+        background: $tag-list-item-bg;
+        border-radius: 20px;
+        position: relative;
+        margin-right: $default-padding;
+        padding: 5px $default-padding;
+        margin-top: $default-padding;
+        >a {
+            color: $tag-list-color;
+            text-decoration: none;
+            padding-left: 20px;
+            position: relative;
+            @include basic-font();
+            &:before {
+                @include fa-icon();
+                content: $fa-var-circle;
+                display: block;
+                font-size: 12px;
+                text-align: center;
+                color: #fff;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+            &:hover {
+                background-color: $tag-list-item-bg;
+                &:after {
+                    border-left: 10px solid $tag-list-item-bg;
+                }
+            }
+        }
+    }
+}

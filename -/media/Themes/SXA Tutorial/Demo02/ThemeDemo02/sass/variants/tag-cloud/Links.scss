@@ -1,0 +1,29 @@
+span.field-title {
+    &.tag-links {
+        @include basic-border(all, $tag-cloud-item-border);
+        background-color: $tag-cloud-item-bg;
+        border-radius: 5px;
+        padding: 5px $default-padding;
+        display: block;
+        &:last-child {
+            margin-right: 0;
+        }
+        .tag-usages {
+            &:before {
+                content: "(";
+            }
+            &:after {
+                content: ")";
+            }
+            font-size: inherit;
+            font-weight: bold;
+        }
+        a {
+            font-size: $font-size-x-small;
+            color: $tag-cloud-color;
+            &:hover {
+                color: $tag-cloud-color;
+            }
+        }
+    }
+}
